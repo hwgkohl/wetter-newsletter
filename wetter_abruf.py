@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
-"""
-Taeglicher Wetterabruf fuer den Oberursel-Newsletter.
-Datenquelle: Kachelmannwetter / Meteologix AG
-"""
+"""Wetterabruf mit Selbstdiagnose. Quelle: Kachelmannwetter / Meteologix AG"""
 
-import json
-import os
-import sys
-import time
-import urllib.error
-import urllib.request
+import json, os, sys, urllib.error, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,109 +9,84 @@ BASE = "https://api.kachelmannwetter.com/v02"
 ROOT = Path(__file__).resolve().parent
 KEY = os.environ.get("KACHELMANN_API_KEY", "").strip()
 
+KANDIDATEN = [
+    "current/{lat}/{lon}",
+    "forecast/{lat}/{lon}/advanced",
+    "forecast/{lat}/{lon}/standard",
+    "forecast/{lat}/{lon}/daily",
+    "forecast/{lat}/{lon}/trend",
+    "forecast/{lat}/{lon}",
+]
 
-def hole(pfad: str, versuche: int = 3) -> dict:
+
+def hole(pfad):
     url = f"{BASE}/{pfad}"
     url += "&units=metric" if "?" in url else "?units=metric"
-    letzter = None
-    for n in range(versuche):
-        req = urllib.request.Request(url, headers={
-            "X-API-Key": KEY,
-            "Accept": "application/json",
-            "User-Agent": "Oberursel-Newsletter/1.0",
-        })
-        try:
-            with urllib.request.urlopen(req, timeout=25) as r:
-                return json.loads(r.read().decode("utf-8"))
-        except urllib.error.HTTPError as e:
-            if e.code in (401, 403, 404):
-                raise
-            letzter = f"HTTP {e.code}"
-        except Exception as e:
-            letzter = str(e)
-        time.sleep(2 ** n)
-    raise RuntimeError(letzter or "unbekannt")
-
-
-def zahl(feld):
-    if isinstance(feld, dict):
-        feld = feld.get("value")
-    if feld is None:
-        return None
+    req = urllib.request.Request(url, headers={
+        "X-API-Key": KEY, "Accept": "application/json",
+        "User-Agent": "Oberursel-Newsletter/1.0"})
     try:
-        return round(float(feld))
-    except (TypeError, ValueError):
-        return None
+        with urllib.request.urlopen(req, timeout=25) as r:
+            return r.status, json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        try:
+            koerper = e.read().decode("utf-8")[:300]
+        except Exception:
+            koerper = ""
+        return e.code, koerper
+    except Exception as e:
+        return 0, str(e)[:300]
 
 
-def destilliere(roh: dict, tage: int = 2) -> list:
-    daten = roh.get("data", roh)
-    if isinstance(daten, dict):
-        for schluessel in ("days", "daily", "items", "forecast"):
-            if isinstance(daten.get(schluessel), list):
-                daten = daten[schluessel]
-                break
-    if not isinstance(daten, list):
-        return []
-
-    out = []
-    for eintrag in daten[:tage]:
-        if not isinstance(eintrag, dict):
-            continue
-        out.append({
-            "datum": (eintrag.get("dateTime") or eintrag.get("date")
-                      or eintrag.get("day") or "")[:10],
-            "max": zahl(eintrag.get("tempMax") or eintrag.get("tmax")
-                        or eintrag.get("temperatureMax")),
-            "min": zahl(eintrag.get("tempMin") or eintrag.get("tmin")
-                        or eintrag.get("temperatureMin")),
-            "text": (eintrag.get("weatherText") or eintrag.get("symbolText")
-                     or eintrag.get("description") or ""),
-            "symbol": eintrag.get("symbol") or eintrag.get("weatherSymbol"),
-            "regen_mm": zahl(eintrag.get("precSum") or eintrag.get("prec")),
-            "wind_kmh": zahl(eintrag.get("windSpeed") or eintrag.get("wind")),
-        })
-    return out
+def kuerze(obj, tiefe=0):
+    if tiefe > 3:
+        return "..."
+    if isinstance(obj, dict):
+        return {k: kuerze(v, tiefe + 1) for k, v in list(obj.items())[:25]}
+    if isinstance(obj, list):
+        return [kuerze(x, tiefe + 1) for x in obj[:2]]
+    return obj
 
 
-def main() -> None:
-    if not KEY:
-        sys.exit("FEHLER: Secret KACHELMANN_API_KEY fehlt.")
-
+def main():
     cfg = json.loads((ROOT / "orte.json").read_text(encoding="utf-8"))
-    muster = cfg.get("forecast_pfad", "forecast/{lat}/{lon}/advanced")
-    reise = cfg.get("reiseorte", [])
-    alle = list(cfg.get("orte", [])) + list(reise)
+    orte = list(cfg.get("orte", [])) + list(cfg.get("reiseorte", []))
+    o = orte[0]
 
-    ergebnis = {
+    bericht = {
         "erzeugt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "quelle": "Kachelmannwetter / Meteologix AG",
-        "orte": [],
+        "key_vorhanden": bool(KEY),
+        "key_laenge": len(KEY),
+        "test": {},
     }
-    fehler = []
 
-    for o in alle:
-        pfad = muster.format(lat=o["lat"], lon=o["lon"])
-        eintrag = {"name": o["name"], "reiseort": o in reise}
-        try:
-            eintrag["tage"] = destilliere(hole(pfad))
-            if not eintrag["tage"]:
-                eintrag["fehler"] = "Antwort ohne verwertbare Tageswerte"
-                fehler.append(o["name"])
-        except Exception as e:
-            eintrag["fehler"] = str(e)
-            fehler.append(o["name"])
-        ergebnis["orte"].append(eintrag)
+    treffer = None
+    for muster in KANDIDATEN:
+        status, inhalt = hole(muster.format(lat=o["lat"], lon=o["lon"]))
+        bericht["test"][muster] = {
+            "status": status,
+            "vorschau": kuerze(inhalt) if status == 200 else inhalt,
+        }
+        if status == 200 and muster.startswith("forecast") and treffer is None:
+            treffer = muster
 
-    if len(fehler) == len(alle):
-        sys.exit(f"FEHLER: kein Ort lieferte Daten. "
-                 f"Erste Meldung: {ergebnis['orte'][0].get('fehler')}")
+    if treffer:
+        bericht["gefundener_pfad"] = treffer
+        bericht["orte"] = []
+        for ort in orte:
+            status, inhalt = hole(treffer.format(lat=ort["lat"], lon=ort["lon"]))
+            bericht["orte"].append({
+                "name": ort["name"],
+                "status": status,
+                "daten": kuerze(inhalt) if status == 200 else inhalt,
+            })
+    else:
+        bericht["gefundener_pfad"] = None
 
     (ROOT / "wetter.json").write_text(
-        json.dumps(ergebnis, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"OK - {len(alle) - len(fehler)} von {len(alle)} Orten abgerufen")
-    if fehler:
-        print(f"WARNUNG: keine Daten fuer {', '.join(fehler)}")
+        json.dumps(bericht, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("Diagnose geschrieben. Treffer:", treffer)
 
 
 if __name__ == "__main__":
