@@ -1,0 +1,33 @@
+{
+  "erzeugt": "2026-07-25T07:51:38+00:00",
+  "quelle": "Kachelmannwetter / Meteologix AG",
+  "key_vorhanden": true,
+  "key_laenge": 128,
+  "test": {
+    "current/{lat}/{lon}": {
+      "status": 403,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"Forbidden\",\"status\":403,\"detail\":\"you are not allowed to request forecasts for [lat: 50.201, lon: 8.578]\"}"
+    },
+    "forecast/{lat}/{lon}/advanced": {
+      "status": 404,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"An error occurred\",\"status\":404,\"detail\":\"Not Found\"}"
+    },
+    "forecast/{lat}/{lon}/standard": {
+      "status": 404,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"An error occurred\",\"status\":404,\"detail\":\"Not Found\"}"
+    },
+    "forecast/{lat}/{lon}/daily": {
+      "status": 404,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"An error occurred\",\"status\":404,\"detail\":\"Not Found\"}"
+    },
+    "forecast/{lat}/{lon}/trend": {
+      "status": 404,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"An error occurred\",\"status\":404,\"detail\":\"Not Found\"}"
+    },
+    "forecast/{lat}/{lon}": {
+      "status": 404,
+      "vorschau": "{\"type\":\"https:\\/\\/tools.ietf.org\\/html\\/rfc2616#section-10\",\"title\":\"An error occurred\",\"status\":404,\"detail\":\"Not Found\"}"
+    }
+  },
+  "gefundener_pfad": null
+}
