@@ -1,781 +1,144 @@
 {
-  "erzeugt": "2026-07-26T07:34:00+00:00",
+  "erzeugt": "2026-07-26T07:40:45+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
-  "test": {
-    "current/{lat}/{lon}": {
-      "status": 200,
-      "vorschau": {
-        "lat": 50.201,
-        "lon": 8.578,
-        "alt": 203,
-        "systemOfUnits": "metric",
-        "data": {
-          "isDay": {
-            "dateTime": "2026-07-26T07:30:00+00:00",
-            "name": "isDay",
-            "value": true,
-            "type": "bool",
-            "source": "ANALYSIS"
-          },
-          "temp": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "temp",
-            "value": 19.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "dewpoint": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "dewpoint",
-            "value": 12.3,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "humidityRelative": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "humidityRelative",
-            "value": 62,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "prec1h": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "prec1h",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "pressureMsl": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "pressureMsl",
-            "value": 1006.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "sunHours": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "sunHours",
-            "value": 0.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "cloudCoverage": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "cloudCoverage",
-            "value": 24,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowAmount": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "snowAmount",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowHeight": {
-            "dateTime": "2026-07-25T06:00:00+00:00",
-            "name": "snowHeight",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windSpeed": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windSpeed",
-            "value": 0.9,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windDirection": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windDirection",
-            "value": 158,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windGust": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windGust",
-            "value": 2.2,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "wmoCode": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "wmoCode",
-            "value": 0,
-            "type": "int",
-            "source": "ANALYSIS"
-          },
-          "weatherSymbol": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "weatherSymbol",
-            "value": "partlycloudy",
-            "type": "string",
-            "source": "ANALYSIS"
-          }
-        }
-      }
-    },
-    "forecast/{lat}/{lon}/3day": {
-      "status": 200,
-      "vorschau": {
-        "lat": 50.201,
-        "lon": 8.578,
-        "alt": null,
-        "resolution": "HIGH",
-        "timeZone": "Europe/Berlin",
-        "systemOfUnits": "metric",
-        "run": "2026-07-26T00:00:00+00:00",
-        "data": [
-          {
-            "dateTime": "2026-07-26",
-            "dayName": "today",
-            "tempMax": 28.9,
-            "tempMin": 12.7,
-            "precCurrent": 0.4,
-            "precProb": 14,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "windGust": 14.5,
-            "windSpeed": 4.7,
-            "windDirection": 245,
-            "sunHours": 10.4,
-            "cloudCoverage": 32,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          },
-          {
-            "dateTime": "2026-07-27",
-            "dayName": "tomorrow",
-            "tempMax": 25.3,
-            "tempMin": 16.5,
-            "precCurrent": 0.1,
-            "precProb": 26,
-            "precProb1mm": 5,
-            "precProb10mm": 0,
-            "windGust": 11.3,
-            "windSpeed": 3.3,
-            "windDirection": 283,
-            "sunHours": 11.2,
-            "cloudCoverage": 42,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          }
-        ]
-      }
-    },
-    "forecast/{lat}/{lon}/trend14days": {
-      "status": 200,
-      "vorschau": {
-        "lat": 50.201,
-        "lon": 8.578,
-        "alt": 203,
-        "timeZone": "Europe/Berlin",
-        "systemOfUnits": "metric",
-        "run": "2026-07-26T03:00:00+00:00",
-        "nextRun": "2026-07-26T09:00:00+00:00",
-        "data": [
-          {
-            "dateTime": "2026-07-27",
-            "isWeekend": false,
-            "weekday": "Mon",
-            "tempMax": 25.3,
-            "tempMaxLow": 21.6,
-            "tempMaxHigh": 25.3,
-            "tempMin": 16.5,
-            "tempMinLow": 14.5,
-            "tempMinHigh": 16.7,
-            "prec": 0.1,
-            "precLow": 0,
-            "precHigh": 0.9,
-            "precProb1mm": 5,
-            "precProb10mm": 0,
-            "precType": null,
-            "precIntensity": null,
-            "precWord": null,
-            "windGust": 11.3,
-            "windGustLow": 9.4,
-            "windGustHigh": 12.8,
-            "sunMaxPos": 15.6,
-            "sunHours": 11.2,
-            "sunHoursRelative": 72,
-            "sunHoursLow": 7.3,
-            "sunHoursHigh": 14.9
-          },
-          {
-            "dateTime": "2026-07-28",
-            "isWeekend": false,
-            "weekday": "Tue",
-            "tempMax": 27.5,
-            "tempMaxLow": 24.4,
-            "tempMaxHigh": 28.3,
-            "tempMin": 15.2,
-            "tempMinLow": 13.9,
-            "tempMinHigh": 18.1,
-            "prec": 0,
-            "precLow": 0,
-            "precHigh": 0,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "precType": null,
-            "precIntensity": null,
-            "precWord": null,
-            "windGust": 5.4,
-            "windGustLow": 3.3,
-            "windGustHigh": 8.1,
-            "sunMaxPos": 15.5,
-            "sunHours": 13.2,
-            "sunHoursRelative": 85,
-            "sunHoursLow": 13.2,
-            "sunHoursHigh": 15.5
-          }
-        ]
-      }
-    }
-  },
   "orte": [
     {
-      "ort": "Oberursel",
-      "pfad": "forecast/{lat}/{lon}/3day",
-      "status": 200,
-      "daten": {
-        "lat": 50.201,
-        "lon": 8.578,
-        "alt": null,
-        "resolution": "HIGH",
-        "timeZone": "Europe/Berlin",
-        "systemOfUnits": "metric",
-        "run": "2026-07-26T00:00:00+00:00",
-        "data": [
-          {
-            "dateTime": "2026-07-26",
-            "dayName": "today",
-            "tempMax": 28.9,
-            "tempMin": 12.7,
-            "precCurrent": 0.4,
-            "precProb": 14,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "windGust": 14.5,
-            "windSpeed": 4.7,
-            "windDirection": 245,
-            "sunHours": 10.4,
-            "cloudCoverage": 32,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          },
-          {
-            "dateTime": "2026-07-27",
-            "dayName": "tomorrow",
-            "tempMax": 25.3,
-            "tempMin": 16.5,
-            "precCurrent": 0.1,
-            "precProb": 26,
-            "precProb1mm": 5,
-            "precProb10mm": 0,
-            "windGust": 11.3,
-            "windSpeed": 3.3,
-            "windDirection": 283,
-            "sunHours": 11.2,
-            "cloudCoverage": 42,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "ort": "Oberursel",
-      "pfad": "current/{lat}/{lon}",
-      "status": 200,
-      "daten": {
-        "lat": 50.201,
-        "lon": 8.578,
-        "alt": 203,
-        "systemOfUnits": "metric",
-        "data": {
-          "isDay": {
-            "dateTime": "2026-07-26T07:30:00+00:00",
-            "name": "isDay",
-            "value": true,
-            "type": "bool",
-            "source": "ANALYSIS"
-          },
-          "temp": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "temp",
-            "value": 19.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "dewpoint": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "dewpoint",
-            "value": 12.3,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "humidityRelative": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "humidityRelative",
-            "value": 62,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "prec1h": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "prec1h",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "pressureMsl": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "pressureMsl",
-            "value": 1006.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "sunHours": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "sunHours",
-            "value": 0.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "cloudCoverage": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "cloudCoverage",
-            "value": 24,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowAmount": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "snowAmount",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowHeight": {
-            "dateTime": "2026-07-25T06:00:00+00:00",
-            "name": "snowHeight",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windSpeed": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windSpeed",
-            "value": 0.9,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windDirection": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windDirection",
-            "value": 158,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windGust": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windGust",
-            "value": 2.2,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "wmoCode": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "wmoCode",
-            "value": 0,
-            "type": "int",
-            "source": "ANALYSIS"
-          },
-          "weatherSymbol": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "weatherSymbol",
-            "value": "partlycloudy",
-            "type": "string",
-            "source": "ANALYSIS"
-          }
+      "name": "Oberursel",
+      "reiseort": false,
+      "lauf": "2026-07-26T00:00:00+00:00",
+      "tage": [
+        {
+          "datum": "2026-07-26",
+          "tag": "today",
+          "max": 28.9,
+          "min": 12.7,
+          "regen_prozent": 14,
+          "regen_mm": 0.4,
+          "wind_kmh": 4.7,
+          "boeen_kmh": 14.5,
+          "sonne_std": 10.4,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-27",
+          "tag": "tomorrow",
+          "max": 25.3,
+          "min": 16.5,
+          "regen_prozent": 26,
+          "regen_mm": 0.1,
+          "wind_kmh": 3.3,
+          "boeen_kmh": 11.3,
+          "sonne_std": 11.2,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-28",
+          "tag": "tuesday",
+          "max": 27.5,
+          "min": 15.2,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 1,
+          "boeen_kmh": 5.4,
+          "sonne_std": 13.2,
+          "symbol": "partlycloudy",
+          "text": "heiter"
         }
-      }
+      ]
     },
     {
-      "ort": "Bad Homburg",
-      "pfad": "forecast/{lat}/{lon}/3day",
-      "status": 200,
-      "daten": {
-        "lat": 50.227,
-        "lon": 8.618,
-        "alt": null,
-        "resolution": "HIGH",
-        "timeZone": "Europe/Berlin",
-        "systemOfUnits": "metric",
-        "run": "2026-07-26T00:00:00+00:00",
-        "data": [
-          {
-            "dateTime": "2026-07-26",
-            "dayName": "today",
-            "tempMax": 29.2,
-            "tempMin": 12.4,
-            "precCurrent": 0.3,
-            "precProb": 14,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "windGust": 14.7,
-            "windSpeed": 4.3,
-            "windDirection": 246,
-            "sunHours": 10.4,
-            "cloudCoverage": 30,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          },
-          {
-            "dateTime": "2026-07-27",
-            "dayName": "tomorrow",
-            "tempMax": 25.3,
-            "tempMin": 16.8,
-            "precCurrent": 0.1,
-            "precProb": 27,
-            "precProb1mm": 4,
-            "precProb10mm": 0,
-            "windGust": 11,
-            "windSpeed": 3.6,
-            "windDirection": 287,
-            "sunHours": 10.6,
-            "cloudCoverage": 40,
-            "weatherSymbol": "partlycloudy",
-            "risks": [],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "ort": "Bad Homburg",
-      "pfad": "current/{lat}/{lon}",
-      "status": 200,
-      "daten": {
-        "lat": 50.227,
-        "lon": 8.618,
-        "alt": 186,
-        "systemOfUnits": "metric",
-        "data": {
-          "isDay": {
-            "dateTime": "2026-07-26T07:30:00+00:00",
-            "name": "isDay",
-            "value": true,
-            "type": "bool",
-            "source": "ANALYSIS"
-          },
-          "temp": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "temp",
-            "value": 19.5,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "dewpoint": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "dewpoint",
-            "value": 12.5,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "humidityRelative": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "humidityRelative",
-            "value": 64,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "prec1h": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "prec1h",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "pressureMsl": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "pressureMsl",
-            "value": 1006.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "sunHours": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "sunHours",
-            "value": 0.68,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "cloudCoverage": {
-            "dateTime": "2026-07-26T06:50:00+00:00",
-            "name": "cloudCoverage",
-            "value": 23,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowAmount": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "snowAmount",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "snowHeight": {
-            "dateTime": "2026-07-25T06:00:00+00:00",
-            "name": "snowHeight",
-            "value": 0,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windSpeed": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windSpeed",
-            "value": 0.7,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windDirection": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windDirection",
-            "value": 145,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "windGust": {
-            "dateTime": "2026-07-26T06:00:00+00:00",
-            "name": "windGust",
-            "value": 2,
-            "type": "float",
-            "source": "ANALYSIS"
-          },
-          "wmoCode": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "wmoCode",
-            "value": 0,
-            "type": "int",
-            "source": "ANALYSIS"
-          },
-          "weatherSymbol": {
-            "dateTime": "2026-07-26T07:25:00+00:00",
-            "name": "weatherSymbol",
-            "value": "partlycloudy",
-            "type": "string",
-            "source": "ANALYSIS"
-          }
+      "name": "Bad Homburg",
+      "reiseort": false,
+      "lauf": "2026-07-26T00:00:00+00:00",
+      "tage": [
+        {
+          "datum": "2026-07-26",
+          "tag": "today",
+          "max": 29.2,
+          "min": 12.4,
+          "regen_prozent": 14,
+          "regen_mm": 0.3,
+          "wind_kmh": 4.3,
+          "boeen_kmh": 14.7,
+          "sonne_std": 10.4,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-27",
+          "tag": "tomorrow",
+          "max": 25.3,
+          "min": 16.8,
+          "regen_prozent": 27,
+          "regen_mm": 0.1,
+          "wind_kmh": 3.6,
+          "boeen_kmh": 11,
+          "sonne_std": 10.6,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-28",
+          "tag": "tuesday",
+          "max": 27.9,
+          "min": 15.1,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 0.9,
+          "boeen_kmh": 5.3,
+          "sonne_std": 13.5,
+          "symbol": "partlycloudy",
+          "text": "heiter"
         }
-      }
+      ]
     },
     {
-      "ort": "Ouddorp",
-      "pfad": "forecast/{lat}/{lon}/3day",
-      "status": 200,
-      "daten": {
-        "lat": 51.816,
-        "lon": 3.925,
-        "alt": null,
-        "resolution": "HIGH",
-        "timeZone": "Europe/Amsterdam",
-        "systemOfUnits": "metric",
-        "run": "2026-07-26T00:00:00+00:00",
-        "data": [
-          {
-            "dateTime": "2026-07-26",
-            "dayName": "today",
-            "tempMax": 22.1,
-            "tempMin": 18.9,
-            "precCurrent": 0,
-            "precProb": 54,
-            "precProb1mm": 9,
-            "precProb10mm": 0,
-            "windGust": 17.5,
-            "windSpeed": 6.3,
-            "windDirection": 262,
-            "cloudCoverage": 90,
-            "weatherSymbol": "cloudy",
-            "risks": [
-              "..."
-            ],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          },
-          {
-            "dateTime": "2026-07-27",
-            "dayName": "tomorrow",
-            "tempMax": 21,
-            "tempMin": 17.6,
-            "precCurrent": 0.5,
-            "precProb": 35,
-            "precProb1mm": 9,
-            "precProb10mm": 0,
-            "windGust": 12.5,
-            "windSpeed": 5.4,
-            "windDirection": 281,
-            "cloudCoverage": 61,
-            "weatherSymbol": "cloudy",
-            "risks": [
-              "..."
-            ],
-            "timeOfDay": {
-              "night": "...",
-              "morning": "...",
-              "afternoon": "...",
-              "evening": "..."
-            }
-          }
-        ]
-      }
-    },
-    {
-      "ort": "Ouddorp",
-      "pfad": "current/{lat}/{lon}",
-      "status": 200,
-      "daten": {
-        "lat": 51.816,
-        "lon": 3.925,
-        "alt": 3,
-        "systemOfUnits": "metric",
-        "data": {
-          "isDay": {
-            "dateTime": "2026-07-26T07:30:00+00:00",
-            "name": "isDay",
-            "value": true,
-            "type": "bool",
-            "source": "ANALYSIS"
-          },
-          "temp": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "temp",
-            "value": 20,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "dewpoint": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "dewpoint",
-            "value": 14.3,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "prec1h": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "prec1h",
-            "value": 0,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "pressureMsl": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "pressureMsl",
-            "value": 1004,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "cloudCoverage": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "cloudCoverage",
-            "value": 100,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "snowAmount": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "snowAmount",
-            "value": 0,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "snowHeight": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "snowHeight",
-            "value": 0,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "windSpeed": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "windSpeed",
-            "value": 6.3,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "windDirection": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "windDirection",
-            "value": 252,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "windGust": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "windGust",
-            "value": 10.6,
-            "type": "float",
-            "source": "FORECAST"
-          },
-          "wmoCode": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "wmoCode",
-            "value": 3,
-            "type": "int",
-            "source": "FORECAST"
-          },
-          "weatherSymbol": {
-            "dateTime": "2026-07-26T07:00:00+00:00",
-            "name": "weatherSymbol",
-            "value": "overcast",
-            "type": "string",
-            "source": "FORECAST"
-          }
+      "name": "Ouddorp",
+      "reiseort": false,
+      "lauf": "2026-07-26T00:00:00+00:00",
+      "tage": [
+        {
+          "datum": "2026-07-26",
+          "tag": "today",
+          "max": 22.1,
+          "min": 18.9,
+          "regen_prozent": 54,
+          "regen_mm": 0,
+          "wind_kmh": 6.3,
+          "boeen_kmh": 17.5,
+          "sonne_std": null,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
+        },
+        {
+          "datum": "2026-07-27",
+          "tag": "tomorrow",
+          "max": 21,
+          "min": 17.6,
+          "regen_prozent": 35,
+          "regen_mm": 0.5,
+          "wind_kmh": 5.4,
+          "boeen_kmh": 12.5,
+          "sonne_std": null,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
+        },
+        {
+          "datum": "2026-07-28",
+          "tag": "tuesday",
+          "max": 23.7,
+          "min": 19.1,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 3.3,
+          "boeen_kmh": 9.8,
+          "sonne_std": 8,
+          "symbol": "partlycloudy",
+          "text": "heiter"
         }
-      }
+      ]
     }
-  ],
-  "gefundener_pfad": "forecast/{lat}/{lon}/3day"
+  ]
 }
