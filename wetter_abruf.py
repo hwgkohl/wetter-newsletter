@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Wetterabruf. Quelle: Kachelmannwetter / Meteologix AG"""
+"""Wetterabruf fuer den Oberursel-Newsletter.
+Quelle: Kachelmannwetter / Meteologix AG"""
 
 import json, os, urllib.error, urllib.request
 from datetime import datetime, timezone
@@ -8,57 +9,64 @@ from pathlib import Path
 BASE = "https://api.kachelmannwetter.com/v02"
 ROOT = Path(__file__).resolve().parent
 KEY = os.environ.get("KACHELMANN_API_KEY", "").strip()
-STANDARD = ["current/{lat}/{lon}", "forecast/{lat}/{lon}/3day",
-            "forecast/{lat}/{lon}/trend14days"]
+
+TEXT = {
+    "clear": "klar", "sunny": "sonnig", "mostlysunny": "meist sonnig",
+    "partlycloudy": "heiter", "mostlycloudy": "stark bewoelkt",
+    "cloudy": "bewoelkt", "overcast": "bedeckt", "fog": "Nebel",
+    "rain": "Regen", "lightrain": "leichter Regen", "heavyrain": "starker Regen",
+    "showers": "Schauer", "rainshowers": "Regenschauer",
+    "thunderstorm": "Gewitter", "thunderstorms": "Gewitter",
+    "snow": "Schnee", "snowshowers": "Schneeschauer", "sleet": "Schneeregen",
+    "hail": "Hagel", "drizzle": "Nieselregen",
+}
 
 
 def hole(pfad):
-    url = f"{BASE}/{pfad}?units=metric"
-    req = urllib.request.Request(url, headers={
-        "X-API-Key": KEY, "Accept": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=25) as r:
-            return r.status, json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        return e.code, e.read().decode("utf-8")[:250]
-    except Exception as e:
-        return 0, str(e)[:250]
+    req = urllib.request.Request(
+        f"{BASE}/{pfad}?units=metric",
+        headers={"X-API-Key": KEY, "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        return json.loads(r.read().decode("utf-8"))
 
 
-def kuerze(o, t=0):
-    if t > 3:
-        return "..."
-    if isinstance(o, dict):
-        return {k: kuerze(v, t + 1) for k, v in list(o.items())[:25]}
-    if isinstance(o, list):
-        return [kuerze(x, t + 1) for x in o[:2]]
-    return o
+def tag(t):
+    sym = t.get("weatherSymbol") or ""
+    return {
+        "datum": t.get("dateTime"),
+        "tag": t.get("dayName"),
+        "max": t.get("tempMax"),
+        "min": t.get("tempMin"),
+        "regen_prozent": t.get("precProb"),
+        "regen_mm": t.get("precCurrent"),
+        "wind_kmh": t.get("windSpeed"),
+        "boeen_kmh": t.get("windGust"),
+        "sonne_std": t.get("sunHours"),
+        "symbol": sym,
+        "text": TEXT.get(sym, sym.replace("_", " ")),
+    }
 
 
 def main():
     cfg = json.loads((ROOT / "orte.json").read_text(encoding="utf-8"))
     orte = list(cfg.get("orte", [])) + list(cfg.get("reiseorte", []))
-    pfade = cfg.get("pfade", STANDARD)
     b = {"erzeugt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-         "quelle": "Kachelmannwetter / Meteologix AG", "test": {}, "orte": []}
+         "quelle": "Kachelmannwetter / Meteologix AG", "orte": []}
 
-    treffer = None
-    for m in pfade:
-        s, i = hole(m.format(**orte[0]))
-        b["test"][m] = {"status": s, "vorschau": kuerze(i) if s == 200 else i}
-        if s == 200 and "forecast" in m and treffer is None:
-            treffer = m
-
-    b["gefundener_pfad"] = treffer
-    for ort in orte:
-        for m in ([treffer] if treffer else []) + ["current/{lat}/{lon}"]:
-            s, i = hole(m.format(**ort))
-            b["orte"].append({"ort": ort["name"], "pfad": m, "status": s,
-                              "daten": kuerze(i) if s == 200 else i})
+    for o in orte:
+        e = {"name": o["name"], "reiseort": o in cfg.get("reiseorte", [])}
+        try:
+            r = hole(f"forecast/{o['lat']}/{o['lon']}/3day")
+            e["lauf"] = r.get("run")
+            e["tage"] = [tag(t) for t in r.get("data", [])]
+        except Exception as ex:
+            e["fehler"] = str(ex)[:200]
+        b["orte"].append(e)
 
     (ROOT / "wetter.json").write_text(
         json.dumps(b, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Treffer:", treffer)
+    ok = sum(1 for o in b["orte"] if "tage" in o)
+    print(f"{ok} von {len(orte)} Orten abgerufen")
 
 
 main()
