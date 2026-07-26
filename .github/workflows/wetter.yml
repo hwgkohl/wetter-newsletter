@@ -1,6 +1,9 @@
 name: Wetterabruf
 
 on:
+  push:
+    branches: [main]
+    paths-ignore: ["wetter.json"]
   schedule:
     - cron: "15 4 * * *"
   workflow_dispatch:
