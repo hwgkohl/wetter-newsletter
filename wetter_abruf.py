@@ -1,93 +1,64 @@
 #!/usr/bin/env python3
-"""Wetterabruf mit Selbstdiagnose. Quelle: Kachelmannwetter / Meteologix AG"""
+"""Wetterabruf. Quelle: Kachelmannwetter / Meteologix AG"""
 
-import json, os, sys, urllib.error, urllib.request
+import json, os, urllib.error, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 BASE = "https://api.kachelmannwetter.com/v02"
 ROOT = Path(__file__).resolve().parent
 KEY = os.environ.get("KACHELMANN_API_KEY", "").strip()
-
-KANDIDATEN = [
-    "current/{lat}/{lon}",
-    "forecast/{lat}/{lon}/advanced",
-    "forecast/{lat}/{lon}/standard",
-    "forecast/{lat}/{lon}/daily",
-    "forecast/{lat}/{lon}/trend",
-    "forecast/{lat}/{lon}",
-]
+STANDARD = ["current/{lat}/{lon}", "forecast/{lat}/{lon}/3day",
+            "forecast/{lat}/{lon}/trend14days"]
 
 
 def hole(pfad):
-    url = f"{BASE}/{pfad}"
-    url += "&units=metric" if "?" in url else "?units=metric"
+    url = f"{BASE}/{pfad}?units=metric"
     req = urllib.request.Request(url, headers={
-        "X-API-Key": KEY, "Accept": "application/json",
-        "User-Agent": "Oberursel-Newsletter/1.0"})
+        "X-API-Key": KEY, "Accept": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=25) as r:
             return r.status, json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        try:
-            koerper = e.read().decode("utf-8")[:300]
-        except Exception:
-            koerper = ""
-        return e.code, koerper
+        return e.code, e.read().decode("utf-8")[:250]
     except Exception as e:
-        return 0, str(e)[:300]
+        return 0, str(e)[:250]
 
 
-def kuerze(obj, tiefe=0):
-    if tiefe > 3:
+def kuerze(o, t=0):
+    if t > 3:
         return "..."
-    if isinstance(obj, dict):
-        return {k: kuerze(v, tiefe + 1) for k, v in list(obj.items())[:25]}
-    if isinstance(obj, list):
-        return [kuerze(x, tiefe + 1) for x in obj[:2]]
-    return obj
+    if isinstance(o, dict):
+        return {k: kuerze(v, t + 1) for k, v in list(o.items())[:25]}
+    if isinstance(o, list):
+        return [kuerze(x, t + 1) for x in o[:2]]
+    return o
 
 
 def main():
     cfg = json.loads((ROOT / "orte.json").read_text(encoding="utf-8"))
     orte = list(cfg.get("orte", [])) + list(cfg.get("reiseorte", []))
-    o = orte[0]
-
-    bericht = {
-        "erzeugt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "quelle": "Kachelmannwetter / Meteologix AG",
-        "key_vorhanden": bool(KEY),
-        "key_laenge": len(KEY),
-        "test": {},
-    }
+    pfade = cfg.get("pfade", STANDARD)
+    b = {"erzeugt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+         "quelle": "Kachelmannwetter / Meteologix AG", "test": {}, "orte": []}
 
     treffer = None
-    for muster in KANDIDATEN:
-        status, inhalt = hole(muster.format(lat=o["lat"], lon=o["lon"]))
-        bericht["test"][muster] = {
-            "status": status,
-            "vorschau": kuerze(inhalt) if status == 200 else inhalt,
-        }
-        if status == 200 and muster.startswith("forecast") and treffer is None:
-            treffer = muster
+    for m in pfade:
+        s, i = hole(m.format(**orte[0]))
+        b["test"][m] = {"status": s, "vorschau": kuerze(i) if s == 200 else i}
+        if s == 200 and "forecast" in m and treffer is None:
+            treffer = m
 
-    if treffer:
-        bericht["gefundener_pfad"] = treffer
-        bericht["orte"] = []
-        for ort in orte:
-            status, inhalt = hole(treffer.format(lat=ort["lat"], lon=ort["lon"]))
-            bericht["orte"].append({
-                "name": ort["name"],
-                "status": status,
-                "daten": kuerze(inhalt) if status == 200 else inhalt,
-            })
-    else:
-        bericht["gefundener_pfad"] = None
+    b["gefundener_pfad"] = treffer
+    for ort in orte:
+        for m in ([treffer] if treffer else []) + ["current/{lat}/{lon}"]:
+            s, i = hole(m.format(**ort))
+            b["orte"].append({"ort": ort["name"], "pfad": m, "status": s,
+                              "daten": kuerze(i) if s == 200 else i})
 
     (ROOT / "wetter.json").write_text(
-        json.dumps(bericht, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Diagnose geschrieben. Treffer:", treffer)
+        json.dumps(b, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("Treffer:", treffer)
 
 
-if __name__ == "__main__":
-    main()
+main()
