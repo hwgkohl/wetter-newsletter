@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths-ignore: ["wetter.json"]
   schedule:
-    - cron: "15 4 * * *"
+    - cron: "7 2 * * *"
+    - cron: "7 3 * * *"
+    - cron: "37 3 * * *"
   workflow_dispatch:
 
 permissions:
