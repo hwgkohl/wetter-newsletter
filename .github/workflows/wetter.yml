@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths-ignore: ["wetter.json"]
   schedule:
+    - cron: "7 22 * * *"
+    - cron: "7 23 * * *"
+    - cron: "7 0 * * *"
+    - cron: "7 1 * * *"
     - cron: "7 2 * * *"
     - cron: "7 3 * * *"
     - cron: "37 3 * * *"
