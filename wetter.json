@@ -1,140 +1,140 @@
 {
-  "erzeugt": "2026-07-28T11:35:44+00:00",
+  "erzeugt": "2026-07-29T04:02:47+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "orte": [
     {
       "name": "Oberursel",
       "reiseort": false,
-      "lauf": "2026-07-28T06:00:00+00:00",
+      "lauf": "2026-07-29T00:00:00+00:00",
       "tage": [
         {
-          "datum": "2026-07-28",
-          "tag": "today",
-          "max": 27.8,
-          "min": 14.2,
-          "regen_prozent": 0,
-          "regen_mm": 0,
-          "wind_kmh": 1.1,
-          "boeen_kmh": 5.3,
-          "sonne_std": 12.4,
-          "symbol": "sunshine",
-          "text": "sunshine"
-        },
-        {
           "datum": "2026-07-29",
-          "tag": "tomorrow",
-          "max": 33.5,
-          "min": 17.4,
+          "tag": "today",
+          "max": 34.3,
+          "min": 17.2,
           "regen_prozent": 0,
           "regen_mm": 0,
           "wind_kmh": 1.3,
-          "boeen_kmh": 7.5,
+          "boeen_kmh": 7.9,
           "sonne_std": 14.2,
           "symbol": "sunshine",
           "text": "sunshine"
         },
         {
           "datum": "2026-07-30",
-          "tag": "thursday",
-          "max": 37.5,
-          "min": 18.5,
-          "regen_prozent": 75,
-          "regen_mm": 0.5,
-          "wind_kmh": 2.8,
-          "boeen_kmh": 19.5,
+          "tag": "tomorrow",
+          "max": 37.4,
+          "min": 18,
+          "regen_prozent": 35,
+          "regen_mm": 1.8,
+          "wind_kmh": 2.7,
+          "boeen_kmh": 25.1,
           "sonne_std": 9.4,
-          "symbol": "partlycloudy",
-          "text": "heiter"
-        }
-      ]
-    },
-    {
-      "name": "Bad Homburg",
-      "reiseort": false,
-      "lauf": "2026-07-28T06:00:00+00:00",
-      "tage": [
-        {
-          "datum": "2026-07-28",
-          "tag": "today",
-          "max": 28.1,
-          "min": 13.8,
-          "regen_prozent": 0,
-          "regen_mm": 0,
-          "wind_kmh": 1.1,
-          "boeen_kmh": 5.1,
-          "sonne_std": 12.4,
-          "symbol": "sunshine",
-          "text": "sunshine"
-        },
-        {
-          "datum": "2026-07-29",
-          "tag": "tomorrow",
-          "max": 33.9,
-          "min": 17.1,
-          "regen_prozent": 0,
-          "regen_mm": 0,
-          "wind_kmh": 1.2,
-          "boeen_kmh": 7.7,
-          "sonne_std": 14.2,
-          "symbol": "sunshine",
-          "text": "sunshine"
-        },
-        {
-          "datum": "2026-07-30",
-          "tag": "thursday",
-          "max": 37.8,
-          "min": 18.3,
-          "regen_prozent": 75,
-          "regen_mm": 0.2,
-          "wind_kmh": 2.4,
-          "boeen_kmh": 19.7,
-          "sonne_std": 9.5,
-          "symbol": "partlycloudy",
-          "text": "heiter"
-        }
-      ]
-    },
-    {
-      "name": "Ouddorp",
-      "reiseort": false,
-      "lauf": "2026-07-28T06:00:00+00:00",
-      "tage": [
-        {
-          "datum": "2026-07-29",
-          "tag": "tomorrow",
-          "max": 31.7,
-          "min": 19.7,
-          "regen_prozent": 0,
-          "regen_mm": 0,
-          "wind_kmh": 2.4,
-          "boeen_kmh": 5.6,
-          "sonne_std": null,
-          "symbol": "partlycloudy",
-          "text": "heiter"
-        },
-        {
-          "datum": "2026-07-30",
-          "tag": "thursday",
-          "max": 22.9,
-          "min": 19.9,
-          "regen_prozent": 1,
-          "regen_mm": 0,
-          "wind_kmh": 4,
-          "boeen_kmh": 9.4,
-          "sonne_std": 5.4,
           "symbol": "partlycloudy",
           "text": "heiter"
         },
         {
           "datum": "2026-07-31",
           "tag": "friday",
-          "max": 20.8,
-          "min": 17.9,
+          "max": 30.9,
+          "min": 19.5,
+          "regen_prozent": 55,
+          "regen_mm": 6.7,
+          "wind_kmh": 1.3,
+          "boeen_kmh": 11.6,
+          "sonne_std": 4,
+          "symbol": "showers",
+          "text": "Schauer"
+        }
+      ]
+    },
+    {
+      "name": "Bad Homburg",
+      "reiseort": false,
+      "lauf": "2026-07-29T00:00:00+00:00",
+      "tage": [
+        {
+          "datum": "2026-07-29",
+          "tag": "today",
+          "max": 34.7,
+          "min": 17.3,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 1.2,
+          "boeen_kmh": 8,
+          "sonne_std": 14.2,
+          "symbol": "sunshine",
+          "text": "sunshine"
+        },
+        {
+          "datum": "2026-07-30",
+          "tag": "tomorrow",
+          "max": 37.7,
+          "min": 17.6,
           "regen_prozent": 31,
-          "regen_mm": 0.3,
-          "wind_kmh": 4,
-          "boeen_kmh": 10.6,
-          "sonne_std": 4.4,
+          "regen_mm": 0.9,
+          "wind_kmh": 2.3,
+          "boeen_kmh": 23.4,
+          "sonne_std": 9.6,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-31",
+          "tag": "friday",
+          "max": 31.4,
+          "min": 19.3,
+          "regen_prozent": 55,
+          "regen_mm": 7.6,
+          "wind_kmh": 1.3,
+          "boeen_kmh": 16.2,
+          "sonne_std": 4.1,
+          "symbol": "showers",
+          "text": "Schauer"
+        }
+      ]
+    },
+    {
+      "name": "Ouddorp",
+      "reiseort": false,
+      "lauf": "2026-07-29T00:00:00+00:00",
+      "tage": [
+        {
+          "datum": "2026-07-29",
+          "tag": "today",
+          "max": 31,
+          "min": 19.4,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 2,
+          "boeen_kmh": 5.8,
+          "sonne_std": null,
+          "symbol": "sunshine",
+          "text": "sunshine"
+        },
+        {
+          "datum": "2026-07-30",
+          "tag": "tomorrow",
+          "max": 23.5,
+          "min": 18.7,
+          "regen_prozent": 1,
+          "regen_mm": 0,
+          "wind_kmh": 3.7,
+          "boeen_kmh": 8.4,
+          "sonne_std": null,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-07-31",
+          "tag": "friday",
+          "max": 20.7,
+          "min": 18.2,
+          "regen_prozent": 20,
+          "regen_mm": 0.1,
+          "wind_kmh": 4.1,
+          "boeen_kmh": 11.4,
+          "sonne_std": 3.6,
           "symbol": "cloudy",
           "text": "bewoelkt"
         }
