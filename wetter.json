@@ -1,11 +1,11 @@
 {
-  "erzeugt": "2026-07-30T09:39:24+00:00",
+  "erzeugt": "2026-07-30T10:04:44+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "orte": [
     {
       "name": "Oberursel",
       "reiseort": false,
-      "lauf": "2026-07-30T00:00:00+00:00",
+      "lauf": "2026-07-30T06:00:00+00:00",
       "tage": [
         {
           "datum": "2026-07-30",
@@ -41,7 +41,7 @@
           "regen_prozent": 61,
           "regen_mm": 0.2,
           "wind_kmh": 2.7,
-          "boeen_kmh": 7.2,
+          "boeen_kmh": 8,
           "sonne_std": 6.5,
           "symbol": "cloudy",
           "text": "bewoelkt"
@@ -51,7 +51,7 @@
     {
       "name": "Bad Homburg",
       "reiseort": false,
-      "lauf": "2026-07-30T00:00:00+00:00",
+      "lauf": "2026-07-30T06:00:00+00:00",
       "tage": [
         {
           "datum": "2026-07-30",
@@ -97,7 +97,7 @@
     {
       "name": "Ouddorp",
       "reiseort": false,
-      "lauf": "2026-07-30T00:00:00+00:00",
+      "lauf": "2026-07-30T06:00:00+00:00",
       "tage": [
         {
           "datum": "2026-07-31",
@@ -115,26 +115,26 @@
         {
           "datum": "2026-08-01",
           "tag": "saturday",
-          "max": 21.3,
+          "max": 21,
           "min": 15.1,
           "regen_prozent": 2,
           "regen_mm": 0,
-          "wind_kmh": 2.2,
-          "boeen_kmh": 6.7,
-          "sonne_std": 13,
+          "wind_kmh": 2.4,
+          "boeen_kmh": 6.3,
+          "sonne_std": 11.9,
           "symbol": "partlycloudy",
           "text": "heiter"
         },
         {
           "datum": "2026-08-02",
           "tag": "sunday",
-          "max": 25,
-          "min": 17,
+          "max": 24.8,
+          "min": 16.8,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 3.4,
-          "boeen_kmh": 9.2,
-          "sonne_std": 4.4,
+          "wind_kmh": 3.2,
+          "boeen_kmh": 9.9,
+          "sonne_std": 7.1,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
