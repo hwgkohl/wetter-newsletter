@@ -1,5 +1,5 @@
 {
-  "erzeugt": "2026-07-30T07:42:52+00:00",
+  "erzeugt": "2026-07-30T07:56:21+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "orte": [
     {
@@ -100,43 +100,43 @@
       "lauf": "2026-07-30T00:00:00+00:00",
       "tage": [
         {
-          "datum": "2026-07-30",
-          "tag": "today",
-          "max": 23.7,
-          "min": 19.8,
-          "regen_prozent": 4,
-          "regen_mm": 0,
-          "wind_kmh": 3.4,
-          "boeen_kmh": 8.9,
-          "sonne_std": null,
-          "symbol": "partlycloudy",
-          "text": "heiter"
-        },
-        {
           "datum": "2026-07-31",
           "tag": "tomorrow",
-          "max": 21.8,
-          "min": 17.4,
+          "max": 23,
+          "min": 17.8,
           "regen_prozent": 16,
           "regen_mm": 0,
-          "wind_kmh": 3.9,
-          "boeen_kmh": 10.7,
+          "wind_kmh": 4,
+          "boeen_kmh": 10.3,
           "sonne_std": null,
-          "symbol": "partlycloudy",
-          "text": "heiter"
+          "symbol": "cloudy",
+          "text": "bewoelkt"
         },
         {
           "datum": "2026-08-01",
           "tag": "saturday",
           "max": 21.3,
-          "min": 15.3,
+          "min": 15.1,
           "regen_prozent": 2,
           "regen_mm": 0,
-          "wind_kmh": 2.3,
+          "wind_kmh": 2.2,
           "boeen_kmh": 6.7,
-          "sonne_std": 14.8,
-          "symbol": "sunshine",
-          "text": "sunshine"
+          "sonne_std": 13,
+          "symbol": "partlycloudy",
+          "text": "heiter"
+        },
+        {
+          "datum": "2026-08-02",
+          "tag": "sunday",
+          "max": 25,
+          "min": 17,
+          "regen_prozent": 0,
+          "regen_mm": 0,
+          "wind_kmh": 3.4,
+          "boeen_kmh": 9.2,
+          "sonne_std": 4.4,
+          "symbol": "partlycloudy",
+          "text": "heiter"
         }
       ]
     }
