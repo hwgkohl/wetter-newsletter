@@ -1,6 +1,8 @@
 {
   "forecast_pfad": "forecast/{lat}/{lon}/advanced",
 
+  "_hinweis_orte": "Kernregionen. Kachelmann liefert nur Oberursel und Bad Homburg (Lizenz: 1 Standort + 5 km). Frankfurt und Ouddorp kommen automatisch ueber Open-Meteo.",
+
   "orte": [
     { "name": "Oberursel",   "lat": 50.201, "lon": 8.578 },
     { "name": "Bad Homburg", "lat": 50.227, "lon": 8.618 },
@@ -8,6 +10,18 @@
     { "name": "Ouddorp",     "lat": 51.816, "lon": 3.925 }
   ],
 
-  "reiseorte": []
-}
+  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block. Alle laufen ueber Open-Meteo, kosten nichts und stehen im selben Abruf. Nur ergaenzen, wenn ein wirklich neuer Ort im Kalender auftaucht.",
 
+  "reiseorte": [
+    { "name": "Bad Nauheim-Schwalheim", "lat": 50.355, "lon": 8.769 },
+    { "name": "Kiedrich",               "lat": 50.040, "lon": 8.080 },
+    { "name": "Baden-Baden",            "lat": 48.766, "lon": 8.229 },
+    { "name": "Wiesbaden",              "lat": 50.083, "lon": 8.240 },
+    { "name": "Mainz",                  "lat": 49.993, "lon": 8.247 },
+    { "name": "Darmstadt",              "lat": 49.872, "lon": 8.651 },
+    { "name": "Offenbach",              "lat": 50.100, "lon": 8.767 },
+    { "name": "Friedrichsdorf",         "lat": 50.250, "lon": 8.642 },
+    { "name": "Koenigstein",            "lat": 50.180, "lon": 8.472 },
+    { "name": "Kronberg",               "lat": 50.180, "lon": 8.520 }
+  ]
+}
