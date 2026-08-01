@@ -1,11 +1,11 @@
 {
-  "erzeugt": "2026-08-01T03:28:24+00:00",
+  "erzeugt": "2026-08-01T04:04:39+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "orte": [
     {
       "name": "Oberursel",
       "reiseort": false,
-      "lauf": "2026-07-31T18:00:00+00:00",
+      "lauf": "2026-08-01T00:00:00+00:00",
       "tage": [
         {
           "datum": "2026-08-01",
@@ -36,13 +36,13 @@
         {
           "datum": "2026-08-03",
           "tag": "monday",
-          "max": 33.5,
+          "max": 34.3,
           "min": 20.3,
           "regen_prozent": 23,
-          "regen_mm": 0,
-          "wind_kmh": 1.6,
-          "boeen_kmh": 7.3,
-          "sonne_std": 11.8,
+          "regen_mm": 0.1,
+          "wind_kmh": 1.7,
+          "boeen_kmh": 8.3,
+          "sonne_std": 12.1,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -51,7 +51,7 @@
     {
       "name": "Bad Homburg",
       "reiseort": false,
-      "lauf": "2026-07-31T18:00:00+00:00",
+      "lauf": "2026-08-01T00:00:00+00:00",
       "tage": [
         {
           "datum": "2026-08-01",
@@ -82,22 +82,27 @@
         {
           "datum": "2026-08-03",
           "tag": "monday",
-          "max": 33.7,
+          "max": 34.5,
           "min": 20.1,
           "regen_prozent": 23,
-          "regen_mm": 0,
-          "wind_kmh": 1.5,
-          "boeen_kmh": 6.9,
-          "sonne_std": 11.3,
+          "regen_mm": 0.1,
+          "wind_kmh": 1.6,
+          "boeen_kmh": 7.4,
+          "sonne_std": 11.8,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
       ]
     },
     {
+      "name": "Frankfurt",
+      "reiseort": false,
+      "fehler": "HTTP Error 403: Forbidden"
+    },
+    {
       "name": "Ouddorp",
       "reiseort": false,
-      "lauf": "2026-07-31T18:00:00+00:00",
+      "lauf": "2026-08-01T00:00:00+00:00",
       "tage": [
         {
           "datum": "2026-08-01",
@@ -128,13 +133,13 @@
         {
           "datum": "2026-08-03",
           "tag": "monday",
-          "max": 29.6,
-          "min": 19.1,
+          "max": 29.3,
+          "min": 19.4,
           "regen_prozent": 33,
           "regen_mm": 0,
-          "wind_kmh": 3.9,
+          "wind_kmh": 3.7,
           "boeen_kmh": 10.6,
-          "sonne_std": 9.8,
+          "sonne_std": 9.9,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
