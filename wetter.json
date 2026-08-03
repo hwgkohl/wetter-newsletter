@@ -1,5 +1,5 @@
 {
-  "erzeugt": "2026-08-03T13:31:21+00:00",
+  "erzeugt": "2026-08-03T13:47:25+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "quelle_2": "Open-Meteo (CC BY 4.0)",
   "orte": [
@@ -687,12 +687,12 @@
         {
           "datum": "2026-08-04",
           "tag": "tomorrow",
-          "max": 26.7,
-          "min": 20.3,
+          "max": 27.1,
+          "min": 20.8,
           "regen_prozent": 18,
           "regen_mm": 0,
-          "wind_kmh": 4.7,
-          "boeen_kmh": 11.1,
+          "wind_kmh": 4.2,
+          "boeen_kmh": 9.6,
           "sonne_std": null,
           "symbol": "partlycloudy",
           "text": "heiter"
@@ -700,13 +700,13 @@
         {
           "datum": "2026-08-05",
           "tag": "wednesday",
-          "max": 22.5,
+          "max": 22.9,
           "min": 20,
           "regen_prozent": 19,
           "regen_mm": 0,
-          "wind_kmh": 8.8,
-          "boeen_kmh": 16.8,
-          "sonne_std": 8.4,
+          "wind_kmh": 8.7,
+          "boeen_kmh": 17.8,
+          "sonne_std": 6.6,
           "symbol": "partlycloudy",
           "text": "heiter"
         },
@@ -727,7 +727,7 @@
       "om_tage": [
         {
           "datum": "2026-08-03",
-          "max": 26.7,
+          "max": 26.4,
           "min": 19.0,
           "regen_prozent": 2,
           "regen_mm": 0.0,
@@ -738,25 +738,25 @@
         },
         {
           "datum": "2026-08-04",
-          "max": 28.8,
-          "min": 20.8,
+          "max": 29.9,
+          "min": 20.9,
           "regen_prozent": 22,
-          "regen_mm": 0.0,
-          "wind_kmh": 24.5,
-          "boeen_kmh": 50.8,
-          "sonne_std": 14.0,
-          "text": "bedeckt"
+          "regen_mm": 1.2,
+          "wind_kmh": 19.4,
+          "boeen_kmh": 67.0,
+          "sonne_std": 10.4,
+          "text": "Nieselregen"
         },
         {
           "datum": "2026-08-05",
-          "max": 23.5,
-          "min": 19.9,
+          "max": 24.0,
+          "min": 19.8,
           "regen_prozent": 25,
-          "regen_mm": 0.1,
-          "wind_kmh": 30.2,
-          "boeen_kmh": 59.8,
-          "sonne_std": 9.3,
-          "text": "Nieselregen"
+          "regen_mm": 0.0,
+          "wind_kmh": 31.0,
+          "boeen_kmh": 57.6,
+          "sonne_std": 12.0,
+          "text": "bedeckt"
         }
       ],
       "stunden": [
@@ -840,67 +840,67 @@
         },
         {
           "zeit": "13:00",
-          "temp": 26.7,
+          "temp": 25.7,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "14:00",
-          "temp": 26.7,
+          "temp": 25.6,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "15:00",
-          "temp": 26.6,
+          "temp": 25.4,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "16:00",
-          "temp": 26.7,
+          "temp": 24.5,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "17:00",
-          "temp": 26.7,
+          "temp": 24.1,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "18:00",
-          "temp": 24.8,
+          "temp": 23.5,
           "regen_mm": 0.0,
           "regen_prozent": 1
         },
         {
           "zeit": "19:00",
-          "temp": 23.9,
+          "temp": 22.7,
           "regen_mm": 0.0,
           "regen_prozent": 1
         },
         {
           "zeit": "20:00",
-          "temp": 22.7,
+          "temp": 22.0,
           "regen_mm": 0.0,
           "regen_prozent": 2
         },
         {
           "zeit": "21:00",
-          "temp": 21.8,
-          "regen_mm": 0.0,
-          "regen_prozent": 2
-        },
-        {
-          "zeit": "22:00",
           "temp": 21.1,
           "regen_mm": 0.0,
           "regen_prozent": 2
         },
         {
+          "zeit": "22:00",
+          "temp": 20.6,
+          "regen_mm": 0.0,
+          "regen_prozent": 2
+        },
+        {
           "zeit": "23:00",
-          "temp": 20.9,
+          "temp": 20.5,
           "regen_mm": 0.0,
           "regen_prozent": 2
         }
