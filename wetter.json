@@ -1,5 +1,5 @@
 {
-  "erzeugt": "2026-08-10T08:54:18+00:00",
+  "erzeugt": "2026-08-10T08:58:39+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "quelle_2": "Open-Meteo (CC BY 4.0)",
   "orte": [
@@ -52,7 +52,7 @@
         "lat": 50.201,
         "lon": 8.578,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-10T10:54:20+02:00",
+        "run": "2026-08-10T10:58:41+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-08-12T19:37:37+02:00",
         "dailyData": [
@@ -927,7 +927,7 @@
         "lat": 50.227,
         "lon": 8.618,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-10T10:54:21+02:00",
+        "run": "2026-08-10T10:58:43+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-08-12T19:37:37+02:00",
         "dailyData": [
@@ -1761,7 +1761,7 @@
         "lat": 50.111,
         "lon": 8.682,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-10T10:54:22+02:00",
+        "run": "2026-08-10T10:58:44+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-08-12T19:37:37+02:00",
         "dailyData": [
@@ -2259,7 +2259,7 @@
         "lat": 51.816,
         "lon": 3.925,
         "timeZone": "Europe/Amsterdam",
-        "run": "2026-08-10T10:54:24+02:00",
+        "run": "2026-08-10T10:58:45+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-08-12T19:37:37+02:00",
         "dailyData": [
@@ -5546,13 +5546,25 @@
   "pollen": {
     "region": "Hessen",
     "teilgebiet": "Rhein-Main",
-    "stand": "2026-08-09 11:00 Uhr",
-    "naechste_ausgabe": "2026-08-10 11:00 Uhr",
-    "feld_verwendet": "tomorrow",
+    "stand": "2026-08-10 11:00 Uhr",
+    "naechste_ausgabe": "2026-08-11 11:00 Uhr",
+    "feld_verwendet": "today",
     "gilt_fuer": "2026-08-10",
-    "versatz_tage": 1,
+    "versatz_tage": 0,
     "arten": {
+      "Beifuss": {
+        "stufe": "2",
+        "text": "mittlere Belastung"
+      },
+      "Roggen": {
+        "stufe": "0",
+        "text": "keine Belastung"
+      },
       "Birke": {
+        "stufe": "0",
+        "text": "keine Belastung"
+      },
+      "Esche": {
         "stufe": "0",
         "text": "keine Belastung"
       },
@@ -5564,23 +5576,11 @@
         "stufe": "0",
         "text": "keine Belastung"
       },
-      "Beifuss": {
-        "stufe": "2",
-        "text": "mittlere Belastung"
-      },
-      "Esche": {
-        "stufe": "0",
-        "text": "keine Belastung"
-      },
-      "Roggen": {
+      "Erle": {
         "stufe": "0",
         "text": "keine Belastung"
       },
       "Hasel": {
-        "stufe": "0",
-        "text": "keine Belastung"
-      },
-      "Erle": {
         "stufe": "0",
         "text": "keine Belastung"
       }
