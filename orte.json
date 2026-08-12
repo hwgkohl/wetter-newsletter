@@ -1,0 +1,109 @@
+{
+  "forecast_pfad": "forecast/{lat}/{lon}/advanced",
+  "_hinweis_orte": "Kernregionen. Kachelmann liefert nur Oberursel und Bad Homburg (Lizenz: 1 Standort + 5 km). Frankfurt und Ouddorp kommen automatisch ueber Open-Meteo.",
+  "orte": [
+    {
+      "name": "Oberursel",
+      "lat": 50.201,
+      "lon": 8.578
+    },
+    {
+      "name": "Bad Homburg",
+      "lat": 50.227,
+      "lon": 8.618
+    },
+    {
+      "name": "Frankfurt",
+      "lat": 50.111,
+      "lon": 8.682
+    },
+    {
+      "name": "Ouddorp",
+      "lat": 51.816,
+      "lon": 3.925
+    }
+  ],
+  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block. Alle laufen ueber Open-Meteo, kosten nichts und stehen im selben Abruf. Nur ergaenzen, wenn ein wirklich neuer Ort im Kalender auftaucht. Ergaenzt 12.08.2026 (Anordnung Helmut): fuenf niederlaendische Orte im Umkreis des Ouddorp-Aufenthalts. Anlass war der kurzfristige Termin in Hellevoetsluis, fuer den die Dreitagesfrist nicht mehr einzuhalten war.",
+  "reiseorte": [
+    {
+      "name": "Bad Nauheim-Schwalheim",
+      "lat": 50.355,
+      "lon": 8.769
+    },
+    {
+      "name": "Kiedrich",
+      "lat": 50.04,
+      "lon": 8.08
+    },
+    {
+      "name": "Baden-Baden",
+      "lat": 48.766,
+      "lon": 8.229
+    },
+    {
+      "name": "Buettelborn",
+      "lat": 49.9,
+      "lon": 8.517
+    },
+    {
+      "name": "Wiesbaden",
+      "lat": 50.083,
+      "lon": 8.24
+    },
+    {
+      "name": "Mainz",
+      "lat": 49.993,
+      "lon": 8.247
+    },
+    {
+      "name": "Darmstadt",
+      "lat": 49.872,
+      "lon": 8.651
+    },
+    {
+      "name": "Offenbach",
+      "lat": 50.1,
+      "lon": 8.767
+    },
+    {
+      "name": "Friedrichsdorf",
+      "lat": 50.25,
+      "lon": 8.642
+    },
+    {
+      "name": "Koenigstein",
+      "lat": 50.18,
+      "lon": 8.472
+    },
+    {
+      "name": "Kronberg",
+      "lat": 50.18,
+      "lon": 8.52
+    },
+    {
+      "name": "Hellevoetsluis",
+      "lat": 51.831,
+      "lon": 4.135
+    },
+    {
+      "name": "Renesse",
+      "lat": 51.734,
+      "lon": 3.769
+    },
+    {
+      "name": "Middelharnis",
+      "lat": 51.755,
+      "lon": 4.17
+    },
+    {
+      "name": "Stellendam",
+      "lat": 51.822,
+      "lon": 4.032
+    },
+    {
+      "name": "Zierikzee",
+      "lat": 51.65,
+      "lon": 3.919
+    }
+  ]
+}
