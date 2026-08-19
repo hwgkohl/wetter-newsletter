@@ -1,5 +1,5 @@
 {
-  "erzeugt": "2026-08-19T05:59:41+00:00",
+  "erzeugt": "2026-08-19T06:08:48+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "quelle_2": "Open-Meteo (CC BY 4.0)",
   "orte": [
@@ -52,7 +52,7 @@
         "lat": 50.201,
         "lon": 8.578,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-19T07:59:45+02:00",
+        "run": "2026-08-19T08:08:51+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-09-11T05:27:18+02:00",
         "dailyData": [
@@ -927,7 +927,7 @@
         "lat": 50.227,
         "lon": 8.618,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-19T07:59:46+02:00",
+        "run": "2026-08-19T08:08:52+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-09-11T05:27:18+02:00",
         "dailyData": [
@@ -1756,12 +1756,12 @@
     {
       "name": "Frankfurt",
       "reiseort": false,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "astro_roh": {
         "lat": 50.111,
         "lon": 8.682,
         "timeZone": "Europe/Berlin",
-        "run": "2026-08-19T07:59:48+02:00",
+        "run": "2026-08-19T08:08:53+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-09-11T05:27:18+02:00",
         "dailyData": [
@@ -2259,7 +2259,7 @@
         "lat": 51.816,
         "lon": 3.925,
         "timeZone": "Europe/Amsterdam",
-        "run": "2026-08-19T07:59:49+02:00",
+        "run": "2026-08-19T08:08:54+02:00",
         "nextFullMoon": "2026-08-28T06:19:57+02:00",
         "nextNewMoon": "2026-09-11T05:27:18+02:00",
         "dailyData": [
@@ -3088,7 +3088,7 @@
     {
       "name": "Bad Nauheim-Schwalheim",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -3310,7 +3310,7 @@
     {
       "name": "Kiedrich",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -3532,7 +3532,7 @@
     {
       "name": "Baden-Baden",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -3754,7 +3754,7 @@
     {
       "name": "Buettelborn",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -3976,7 +3976,7 @@
     {
       "name": "Wiesbaden",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -4198,7 +4198,7 @@
     {
       "name": "Mainz",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -4420,7 +4420,7 @@
     {
       "name": "Darmstadt",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -4642,7 +4642,7 @@
     {
       "name": "Offenbach",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -5545,7 +5545,7 @@
     {
       "name": "Hellevoetsluis",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -5767,7 +5767,7 @@
     {
       "name": "Renesse",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -5989,7 +5989,7 @@
     {
       "name": "Middelharnis",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -6438,7 +6438,7 @@
     {
       "name": "Zierikzee",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -6660,7 +6660,7 @@
     {
       "name": "Berlin",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -6882,7 +6882,7 @@
     {
       "name": "Holzkirchen",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -7104,7 +7104,7 @@
     {
       "name": "Muenchen",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -7326,7 +7326,7 @@
     {
       "name": "Hamburg",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -7548,7 +7548,7 @@
     {
       "name": "Horstmar",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -7770,7 +7770,7 @@
     {
       "name": "Dallas",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -7992,7 +7992,7 @@
     {
       "name": "Natchitoches",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -8214,13 +8214,13 @@
     {
       "name": "New Orleans",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
           "max": 37.0,
           "min": 25.5,
-          "regen_prozent": 15,
+          "regen_prozent": 14,
           "regen_mm": 5.0,
           "wind_kmh": 11.9,
           "boeen_kmh": 24.1,
@@ -8231,7 +8231,7 @@
           "datum": "2026-08-20",
           "max": 36.7,
           "min": 25.5,
-          "regen_prozent": 17,
+          "regen_prozent": 15,
           "regen_mm": 0.0,
           "wind_kmh": 20.3,
           "boeen_kmh": 35.3,
@@ -8303,19 +8303,19 @@
           "zeit": "08:00",
           "temp": 27.4,
           "regen_mm": 0.0,
-          "regen_prozent": 0
+          "regen_prozent": 1
         },
         {
           "zeit": "09:00",
           "temp": 27.0,
           "regen_mm": 0.0,
-          "regen_prozent": 1
+          "regen_prozent": 0
         },
         {
           "zeit": "10:00",
           "temp": 26.6,
           "regen_mm": 0.0,
-          "regen_prozent": 1
+          "regen_prozent": 0
         },
         {
           "zeit": "11:00",
@@ -8339,7 +8339,7 @@
           "zeit": "14:00",
           "temp": 25.6,
           "regen_mm": 0.0,
-          "regen_prozent": 2
+          "regen_prozent": 1
         },
         {
           "zeit": "15:00",
@@ -8363,7 +8363,7 @@
           "zeit": "18:00",
           "temp": 31.8,
           "regen_mm": 0.0,
-          "regen_prozent": 4
+          "regen_prozent": 3
         },
         {
           "zeit": "19:00",
@@ -8381,19 +8381,19 @@
           "zeit": "21:00",
           "temp": 35.9,
           "regen_mm": 0.0,
-          "regen_prozent": 12
+          "regen_prozent": 11
         },
         {
           "zeit": "22:00",
           "temp": 36.6,
           "regen_mm": 0.0,
-          "regen_prozent": 13
+          "regen_prozent": 10
         },
         {
           "zeit": "23:00",
           "temp": 37.0,
           "regen_mm": 0.0,
-          "regen_prozent": 15
+          "regen_prozent": 14
         }
       ],
       "tage": [
@@ -8401,7 +8401,7 @@
           "datum": "2026-08-19",
           "max": 37.0,
           "min": 25.5,
-          "regen_prozent": 15,
+          "regen_prozent": 14,
           "regen_mm": 5.0,
           "wind_kmh": 11.9,
           "boeen_kmh": 24.1,
@@ -8412,7 +8412,7 @@
           "datum": "2026-08-20",
           "max": 36.7,
           "min": 25.5,
-          "regen_prozent": 17,
+          "regen_prozent": 15,
           "regen_mm": 0.0,
           "wind_kmh": 20.3,
           "boeen_kmh": 35.3,
@@ -8436,7 +8436,7 @@
     {
       "name": "Birmingham (AL)",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -8658,7 +8658,7 @@
     {
       "name": "Nashville",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -8675,7 +8675,7 @@
           "datum": "2026-08-20",
           "max": 34.0,
           "min": 20.8,
-          "regen_prozent": 45,
+          "regen_prozent": 46,
           "regen_mm": 37.1,
           "wind_kmh": 18.0,
           "boeen_kmh": 38.5,
@@ -8771,7 +8771,7 @@
           "zeit": "12:00",
           "temp": 20.0,
           "regen_mm": 0.0,
-          "regen_prozent": 1
+          "regen_prozent": 0
         },
         {
           "zeit": "13:00",
@@ -8807,7 +8807,7 @@
           "zeit": "18:00",
           "temp": 30.9,
           "regen_mm": 0.0,
-          "regen_prozent": 1
+          "regen_prozent": 2
         },
         {
           "zeit": "19:00",
@@ -8819,25 +8819,25 @@
           "zeit": "20:00",
           "temp": 34.4,
           "regen_mm": 0.0,
-          "regen_prozent": 3
+          "regen_prozent": 2
         },
         {
           "zeit": "21:00",
           "temp": 34.1,
           "regen_mm": 0.0,
-          "regen_prozent": 4
+          "regen_prozent": 5
         },
         {
           "zeit": "22:00",
           "temp": 33.5,
           "regen_mm": 0.0,
-          "regen_prozent": 4
+          "regen_prozent": 5
         },
         {
           "zeit": "23:00",
           "temp": 32.8,
           "regen_mm": 0.0,
-          "regen_prozent": 5
+          "regen_prozent": 4
         }
       ],
       "tage": [
@@ -8856,7 +8856,7 @@
           "datum": "2026-08-20",
           "max": 34.0,
           "min": 20.8,
-          "regen_prozent": 45,
+          "regen_prozent": 46,
           "regen_mm": 37.1,
           "wind_kmh": 18.0,
           "boeen_kmh": 38.5,
@@ -8880,7 +8880,7 @@
     {
       "name": "Asheville",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -9053,7 +9053,7 @@
           "zeit": "22:00",
           "temp": 30.0,
           "regen_mm": 0.0,
-          "regen_prozent": 2
+          "regen_prozent": 1
         },
         {
           "zeit": "23:00",
@@ -9102,7 +9102,7 @@
     {
       "name": "Staunton",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -9281,7 +9281,7 @@
           "zeit": "23:00",
           "temp": 30.5,
           "regen_mm": 0.0,
-          "regen_prozent": 3
+          "regen_prozent": 2
         }
       ],
       "tage": [
@@ -9324,13 +9324,13 @@
     {
       "name": "Washington D.C.",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
           "max": 32.7,
           "min": 20.2,
-          "regen_prozent": 2,
+          "regen_prozent": 1,
           "regen_mm": 0.0,
           "wind_kmh": 11.9,
           "boeen_kmh": 24.1,
@@ -9503,7 +9503,7 @@
           "zeit": "23:00",
           "temp": 32.7,
           "regen_mm": 0.0,
-          "regen_prozent": 2
+          "regen_prozent": 1
         }
       ],
       "tage": [
@@ -9511,7 +9511,7 @@
           "datum": "2026-08-19",
           "max": 32.7,
           "min": 20.2,
-          "regen_prozent": 2,
+          "regen_prozent": 1,
           "regen_mm": 0.0,
           "wind_kmh": 11.9,
           "boeen_kmh": 24.1,
@@ -9546,7 +9546,7 @@
     {
       "name": "Reston",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -9768,7 +9768,7 @@
     {
       "name": "Athen",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -9990,7 +9990,7 @@
     {
       "name": "Singapur",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -10212,7 +10212,7 @@
     {
       "name": "Phuket",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -10434,7 +10434,7 @@
     {
       "name": "Honolulu",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
@@ -10656,7 +10656,7 @@
     {
       "name": "Los Angeles",
       "reiseort": true,
-      "fehler": "HTTP Error 403: Forbidden",
+      "kachelmann": "nicht lizenziert, uebersprungen",
       "om_tage": [
         {
           "datum": "2026-08-19",
