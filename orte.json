@@ -1,4 +1,3 @@
-9
 {
   "_hinweis_orte": "Kernregionen. Kachelmann liefert fuer Standorte im 5-km-Umkreis der im Meteologix-Konto registrierten Punkte (derzeit Oberursel, Bad Homburg, Ouddorp und Umgebung). Alle uebrigen Orte kommen automatisch ueber Open-Meteo.",
   "_hinweis_kachelmann": "Nur diese Orte liegen im lizenzierten 5-km-Umkreis der im Meteologix-Konto registrierten Standorte. Alle uebrigen werden ohne Kachelmann-Abfrage direkt ueber Open-Meteo bedient. Bei neuen registrierten Standorten hier ergaenzen.",
@@ -33,7 +32,7 @@
       "lon": 3.925
     }
   ],
-  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Ergaenzt 19.08.2026 aus dem Kalender bis Ende Februar 2027: Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Honolulu (Dez/Jan).",
+  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Stand 02.09.2026: gegen den Kalender September bis Dezember 2026 abgeglichen. Alle dort gefundenen Aufenthaltsorte sind enthalten; neu aufgenommen wurde Koeln (Termin 05.10.2026). Enthalten sind ausserdem Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Los Angeles/Honolulu (Dez/Jan).",
   "reiseorte": [
     {
       "name": "Bad Nauheim-Schwalheim",
@@ -74,6 +73,11 @@
       "name": "Offenbach",
       "lat": 50.1,
       "lon": 8.767
+    },
+    {
+      "name": "Koeln",
+      "lat": 50.938,
+      "lon": 6.96
     },
     {
       "name": "Friedrichsdorf",
@@ -212,8 +216,3 @@
     }
   ]
 }
-
-
-
-
-
