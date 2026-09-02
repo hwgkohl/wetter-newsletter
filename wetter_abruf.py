@@ -34,7 +34,16 @@ TEXT = {
     "thunderstorm": "Gewitter", "thunderstorms": "Gewitter",
     "snow": "Schnee", "snowshowers": "Schneeschauer", "sleet": "Schneeregen",
     "hail": "Hagel", "drizzle": "Nieselregen",
+    "sunshine": "sonnig",
 }
+
+# Kachelmann liefert Wind und Boeen in Metern pro Sekunde, obwohl die
+# Pipeline sie bis zum 19.08.2026 als km/h weitergegeben hat. Belegt am
+# 18.08.2026 an sieben lizenzierten Orten: Boeen x 3,6 treffen den Wert von
+# kachelmannwetter.com und die Gegenquelle om_tage (Ouddorp 13,8 -> 49,7
+# gegen 47 im Screenshot). Deshalb wird hier umgerechnet und der Rohwert
+# zur Nachvollziehbarkeit daneben behalten.
+MS_ZU_KMH = 3.6
 
 # WMO-Wettercodes von Open-Meteo, auf die vorhandene Textlogik gemappt
 WMO = {
@@ -58,19 +67,34 @@ def hole(pfad):
 
 def tag(t):
     sym = t.get("weatherSymbol") or ""
-    return {
+    txt = TEXT.get(sym)
+    d = {
         "datum": t.get("dateTime"),
         "tag": t.get("dayName"),
         "max": t.get("tempMax"),
         "min": t.get("tempMin"),
         "regen_prozent": t.get("precProb"),
         "regen_mm": t.get("precCurrent"),
-        "wind_kmh": t.get("windSpeed"),
-        "boeen_kmh": t.get("windGust"),
+        "wind_kmh": kmh(t.get("windSpeed")),
+        "boeen_kmh": kmh(t.get("windGust")),
+        "wind_ms_roh": t.get("windSpeed"),
+        "boeen_ms_roh": t.get("windGust"),
         "sonne_std": t.get("sunHours"),
         "symbol": sym,
-        "text": TEXT.get(sym, sym.replace("_", " ")),
+        "text": txt if txt else sym.replace("_", " "),
     }
+    # Unbekannte Symbole werden ausgewiesen, nicht stillschweigend als
+    # englisches Wort weitergegeben -- sonst landen sie unbemerkt im Blatt.
+    if sym and txt is None:
+        d["symbol_unbekannt"] = True
+    return d
+
+
+def kmh(wert):
+    """Kachelmann-Windwert (m/s) in km/h. Nichtzahlen bleiben unangetastet."""
+    if isinstance(wert, (int, float)):
+        return round(wert * MS_ZU_KMH, 1)
+    return wert
 
 
 def astronomie(lat, lon):
@@ -236,6 +260,14 @@ def main():
     b = {"erzeugt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
          "quelle": "Kachelmannwetter / Meteologix AG",
          "quelle_2": "Open-Meteo (CC BY 4.0)",
+         "hinweis_wind": ("Kachelmann liefert Wind und Boeen in m/s. Ab dem "
+                          "19.08.2026 werden sie mit 3,6 in km/h umgerechnet; "
+                          "der Rohwert steht in wind_ms_roh/boeen_ms_roh. "
+                          "Kachelmann-Wind und om_tage-Wind bleiben trotzdem "
+                          "unterschiedliche Groessen: om_tage fuehrt "
+                          "Tagesmaxima, Kachelmann offenbar einen Mittelwert. "
+                          "Bei den Boeen stimmen beide nach der Umrechnung "
+                          "ueberein, beim Mittelwind nicht."),
          "orte": []}
 
     om = open_meteo(orte)
@@ -258,6 +290,12 @@ def main():
                 r = hole(f"forecast/{o['lat']}/{o['lon']}/3day")
                 e["lauf"] = r.get("run")
                 e["tage"] = [tag(t) for t in r.get("data", [])]
+                # Fuer die Kernorte einen unveraenderten Tag mitschreiben.
+                # Zweck: nachlesen, welche Windfelder die Antwort ueberhaupt
+                # fuehrt (etwa ein Tagesmaximum neben windSpeed), ohne dafuer
+                # einen eigenen Abruf zu brauchen. Nur Tag 0, nur Kernorte.
+                if not e["reiseort"] and r.get("data"):
+                    e["tag0_roh"] = r["data"][0]
             except Exception as ex:
                 e["fehler"] = str(ex)[:200]
         else:
@@ -304,6 +342,11 @@ def main():
             print(f"  astro {o['name']}: {o['astro_fehler']}")
         if o.get("trend14_fehler"):
             print(f"  trend {o['name']}: {o['trend14_fehler']}")
+
+    unbekannt = sorted({t["symbol"] for o in b["orte"]
+                        for t in o.get("tage", []) if t.get("symbol_unbekannt")})
+    if unbekannt:
+        print(f"Unuebersetzte Wettersymbole: {', '.join(unbekannt)}")
 
     ok = sum(1 for o in b["orte"] if "tage" in o)
     ersatz = sum(1 for o in b["orte"] if o.get("quelle_ersatz"))
