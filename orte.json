@@ -32,12 +32,17 @@
       "lon": 3.925
     }
   ],
-  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Stand 02.09.2026: gegen den Kalender September bis Dezember 2026 abgeglichen. Alle dort gefundenen Aufenthaltsorte sind enthalten; neu aufgenommen wurde Koeln (Termin 05.10.2026). Enthalten sind ausserdem Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Los Angeles/Honolulu (Dez/Jan).",
+  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Ergaenzt 19.08.2026 aus dem Kalender bis Ende Februar 2027: Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Honolulu (Dez/Jan). Ergaenzt 28.08.2026: Bad Vilbel (Kalendertermin Sa 29.08., Golfhotel Lindenhof), Koordinaten aus dem Open-Meteo-Geocoder 50.179 / 8.738. Ergaenzt 22.09.2026 aus dem Kalender: Kiel (gemeinsames Abendessen am 28.09.) und Feldkirchen-Westerham (Abendessen am 23.09.), Koordinaten aus dem Open-Meteo-Geocoder. Abgleich 25.09.2026 mit dem Kalender bis 31.01.2027 und mit der Repo-Fassung: Koeln aus der Repo-Fassung uebernommen (Termin Mo 05.10.), Wehrheim neu (Termin Fr 04.12.), Koordinaten aus dem Open-Meteo-Geocoder 50.300 / 8.567. Uebrige Kalenderorte bis Januar bereits gefuehrt: Kiel, Hamburg, Horstmar, Athen, Singapur, Phuket, Los Angeles, Honolulu.",
   "reiseorte": [
     {
       "name": "Bad Nauheim-Schwalheim",
       "lat": 50.355,
       "lon": 8.769
+    },
+    {
+      "name": "Bad Vilbel",
+      "lat": 50.179,
+      "lon": 8.738
     },
     {
       "name": "Kiedrich",
@@ -213,6 +218,21 @@
       "name": "Los Angeles",
       "lat": 34.052,
       "lon": -118.244
+    },
+    {
+      "name": "Kiel",
+      "lat": 54.323,
+      "lon": 10.139
+    },
+    {
+      "name": "Feldkirchen-Westerham",
+      "lat": 47.9,
+      "lon": 11.833
+    },
+    {
+      "name": "Wehrheim",
+      "lat": 50.3,
+      "lon": 8.567
     }
   ]
 }
