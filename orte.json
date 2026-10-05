@@ -32,7 +32,7 @@
       "lon": 3.925
     }
   ],
-  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Ergaenzt 19.08.2026 aus dem Kalender bis Ende Februar 2027: Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Honolulu (Dez/Jan). Ergaenzt 28.08.2026: Bad Vilbel (Kalendertermin Sa 29.08., Golfhotel Lindenhof), Koordinaten aus dem Open-Meteo-Geocoder 50.179 / 8.738. Ergaenzt 22.09.2026 aus dem Kalender: Kiel (gemeinsames Abendessen am 28.09.) und Feldkirchen-Westerham (Abendessen am 23.09.), Koordinaten aus dem Open-Meteo-Geocoder. Abgleich 25.09.2026 mit dem Kalender bis 31.01.2027 und mit der Repo-Fassung: Koeln aus der Repo-Fassung uebernommen (Termin Mo 05.10.), Wehrheim neu (Termin Fr 04.12.), Koordinaten aus dem Open-Meteo-Geocoder 50.300 / 8.567. Uebrige Kalenderorte bis Januar bereits gefuehrt: Kiel, Hamburg, Horstmar, Athen, Singapur, Phuket, Los Angeles, Honolulu. Ergaenzt 30.09.2026 auf Anordnung Helmut: Erkrath (Termin Mo 05.10.), Koordinaten aus dem Open-Meteo-Geocoder 51.222 / 6.908.",
+  "_hinweis_reiseorte": "Vorrat fuer den Reisewetter-Block, alle ueber Open-Meteo. Ergaenzt 19.08.2026 aus dem Kalender bis Ende Februar 2027: Berlin, Holzkirchen, Muenchen, Hamburg, Horstmar sowie die Reiseziele USA-Rundreise (Sep), Athen (Okt), Singapur/Phuket (Nov) und Honolulu (Dez/Jan). Ergaenzt 28.08.2026: Bad Vilbel (Kalendertermin Sa 29.08., Golfhotel Lindenhof), Koordinaten aus dem Open-Meteo-Geocoder 50.179 / 8.738. Ergaenzt 22.09.2026 aus dem Kalender: Kiel (gemeinsames Abendessen am 28.09.) und Feldkirchen-Westerham (Abendessen am 23.09.), Koordinaten aus dem Open-Meteo-Geocoder. Abgleich 25.09.2026 mit dem Kalender bis 31.01.2027 und mit der Repo-Fassung: Koeln aus der Repo-Fassung uebernommen (Termin Mo 05.10.), Wehrheim neu (Termin Fr 04.12.), Koordinaten aus dem Open-Meteo-Geocoder 50.300 / 8.567. Uebrige Kalenderorte bis Januar bereits gefuehrt: Kiel, Hamburg, Horstmar, Athen, Singapur, Phuket, Los Angeles, Honolulu. Ergaenzt 30.09.2026 auf Anordnung Helmut: Erkrath (Termin Mo 05.10.), Koordinaten aus dem Open-Meteo-Geocoder 51.222 / 6.908. Ergaenzt 04.10.2026: Split (Kalender Do 29.10. bis Sa 31.10.), Koordinaten aus dem Open-Meteo-Geocoder 43.509 / 16.439.",
   "reiseorte": [
     {
       "name": "Bad Nauheim-Schwalheim",
@@ -238,6 +238,11 @@
       "name": "Erkrath",
       "lat": 51.222,
       "lon": 6.908
+    },
+    {
+      "name": "Split",
+      "lat": 43.509,
+      "lon": 16.439
     }
   ]
 }
