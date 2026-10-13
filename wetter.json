@@ -1,5 +1,5 @@
 {
-  "erzeugt": "2026-10-13T10:26:26+00:00",
+  "erzeugt": "2026-10-13T10:57:27+00:00",
   "quelle": "Kachelmannwetter / Meteologix AG",
   "quelle_2": "Open-Meteo (CC BY 4.0)",
   "hinweis_wind": "Kachelmann liefert Wind und Boeen in m/s. Ab dem 19.08.2026 werden sie mit 3,6 in km/h umgerechnet; der Rohwert steht in wind_ms_roh/boeen_ms_roh. Kachelmann-Wind und om_tage-Wind bleiben trotzdem unterschiedliche Groessen: om_tage fuehrt Tagesmaxima, Kachelmann offenbar einen Mittelwert. Bei den Boeen stimmen beide nach der Umrechnung ueberein, beim Mittelwind nicht.",
@@ -12,45 +12,45 @@
         {
           "datum": "2026-10-13",
           "tag": "today",
-          "max": 11.4,
-          "min": 5.6,
+          "max": 12,
+          "min": 5.3,
           "regen_prozent": 37,
-          "regen_mm": 1.5,
-          "wind_kmh": 7.9,
-          "boeen_kmh": 25.2,
-          "wind_ms_roh": 2.2,
-          "boeen_ms_roh": 7,
-          "sonne_std": 0.3,
+          "regen_mm": 0.9,
+          "wind_kmh": 9.4,
+          "boeen_kmh": 23.0,
+          "wind_ms_roh": 2.6,
+          "boeen_ms_roh": 6.4,
+          "sonne_std": 0.2,
           "symbol": "cloudy",
           "text": "bewoelkt"
         },
         {
           "datum": "2026-10-14",
           "tag": "tomorrow",
-          "max": 16.1,
-          "min": 8.8,
+          "max": 15.3,
+          "min": 9.4,
           "regen_prozent": 10,
           "regen_mm": 0,
           "wind_kmh": 4.0,
-          "boeen_kmh": 20.5,
+          "boeen_kmh": 22.7,
           "wind_ms_roh": 1.1,
-          "boeen_ms_roh": 5.7,
-          "sonne_std": 6.4,
-          "symbol": "partlycloudy",
-          "text": "heiter"
+          "boeen_ms_roh": 6.3,
+          "sonne_std": 5.4,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
         },
         {
           "datum": "2026-10-15",
           "tag": "thursday",
           "max": 15.5,
-          "min": 7,
+          "min": 6.9,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 3.6,
-          "boeen_kmh": 19.1,
-          "wind_ms_roh": 1,
-          "boeen_ms_roh": 5.3,
-          "sonne_std": 7.9,
+          "wind_kmh": 4.3,
+          "boeen_kmh": 18.7,
+          "wind_ms_roh": 1.2,
+          "boeen_ms_roh": 5.2,
+          "sonne_std": 7.4,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -58,17 +58,17 @@
       "tag0_roh": {
         "dateTime": "2026-10-13",
         "dayName": "today",
-        "tempMax": 11.4,
-        "tempMin": 5.6,
-        "precCurrent": 1.5,
+        "tempMax": 12,
+        "tempMin": 5.3,
+        "precCurrent": 0.9,
         "precProb": 37,
         "precProb1mm": 4,
         "precProb10mm": 0,
-        "windGust": 7,
-        "windSpeed": 2.2,
-        "windDirection": 214,
-        "sunHours": 0.3,
-        "cloudCoverage": 87,
+        "windGust": 6.4,
+        "windSpeed": 2.6,
+        "windDirection": 215,
+        "sunHours": 0.2,
+        "cloudCoverage": 91,
         "weatherSymbol": "cloudy",
         "risks": [],
         "timeOfDay": {
@@ -76,59 +76,53 @@
             "timeOfDay": "night",
             "isDay": false,
             "tempMax": 6.9,
-            "tempMin": 5.6,
+            "tempMin": 5.3,
             "precCurrent": 0,
-            "precProb": 14,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "windGust": 1.3,
-            "windSpeed": 0.2,
-            "windDirection": 211,
             "weatherSymbol": "partlycloudy",
             "risks": []
           },
           "morning": {
             "timeOfDay": "morning",
             "isDay": true,
-            "tempMax": 8.6,
-            "tempMin": 7,
-            "precCurrent": 0,
+            "tempMax": 9.4,
+            "tempMin": 7.2,
+            "precCurrent": 0.3,
             "precProb": 30,
             "precProb1mm": 2,
             "precProb10mm": 0,
-            "windGust": 4.2,
-            "windSpeed": 1,
-            "windDirection": 200,
-            "weatherSymbol": "overcast",
+            "windGust": 4.6,
+            "windSpeed": 1.3,
+            "windDirection": 223,
+            "weatherSymbol": "cloudy",
             "risks": []
           },
           "afternoon": {
             "timeOfDay": "afternoon",
             "isDay": true,
-            "tempMax": 10.9,
-            "tempMin": 8.6,
-            "precCurrent": 1.3,
+            "tempMax": 10.4,
+            "tempMin": 8.7,
+            "precCurrent": 0.4,
             "precProb": 35,
             "precProb1mm": 4,
             "precProb10mm": 0,
-            "windGust": 5,
+            "windGust": 4.9,
             "windSpeed": 2.4,
-            "windDirection": 211,
+            "windDirection": 206,
             "weatherSymbol": "overcast",
             "risks": []
           },
           "evening": {
             "timeOfDay": "evening",
             "isDay": false,
-            "tempMax": 11.4,
-            "tempMin": 10.3,
-            "precCurrent": 0.2,
+            "tempMax": 12,
+            "tempMin": 10.1,
+            "precCurrent": 0.1,
             "precProb": 37,
             "precProb1mm": 1,
             "precProb10mm": 0,
-            "windGust": 7,
-            "windSpeed": 3.8,
-            "windDirection": 219,
+            "windGust": 6.4,
+            "windSpeed": 3.9,
+            "windDirection": 218,
             "weatherSymbol": "cloudy",
             "risks": []
           }
@@ -138,7 +132,7 @@
         "lat": 50.201,
         "lon": 8.578,
         "timeZone": "Europe/Berlin",
-        "run": "2026-10-13T12:26:28+02:00",
+        "run": "2026-10-13T12:57:30+02:00",
         "nextFullMoon": "2026-10-26T05:13:07+01:00",
         "nextNewMoon": "2026-11-09T08:02:30+01:00",
         "dailyData": [
@@ -833,9 +827,9 @@
           "max": 11.1,
           "min": 5.6,
           "regen_prozent": 53,
-          "regen_mm": 1.5,
-          "wind_kmh": 10.6,
-          "boeen_kmh": 22.7,
+          "regen_mm": 1.1,
+          "wind_kmh": 10.8,
+          "boeen_kmh": 21.6,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -845,9 +839,9 @@
           "min": 8.0,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 5.6,
-          "boeen_kmh": 14.4,
-          "sonne_std": 8.7,
+          "wind_kmh": 5.4,
+          "boeen_kmh": 13.3,
+          "sonne_std": 8.8,
           "text": "Nebel"
         },
         {
@@ -858,7 +852,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 7.6,
           "boeen_kmh": 33.8,
-          "sonne_std": 9.1,
+          "sonne_std": 8.2,
           "text": "Nebel"
         }
       ],
@@ -938,13 +932,13 @@
         {
           "zeit": "12:00",
           "temp": 10.3,
-          "regen_mm": 0.7,
+          "regen_mm": 0.0,
           "regen_prozent": 21
         },
         {
           "zeit": "13:00",
           "temp": 9.6,
-          "regen_mm": 0.3,
+          "regen_mm": 0.2,
           "regen_prozent": 35
         },
         {
@@ -1004,7 +998,7 @@
         {
           "zeit": "23:00",
           "temp": 10.8,
-          "regen_mm": 0.0,
+          "regen_mm": 0.4,
           "regen_prozent": 53
         }
       ]
@@ -1017,13 +1011,13 @@
         {
           "datum": "2026-10-13",
           "tag": "today",
-          "max": 11,
-          "min": 5.8,
+          "max": 11.2,
+          "min": 5.5,
           "regen_prozent": 37,
-          "regen_mm": 0.8,
-          "wind_kmh": 6.5,
+          "regen_mm": 1.6,
+          "wind_kmh": 7.9,
           "boeen_kmh": 20.9,
-          "wind_ms_roh": 1.8,
+          "wind_ms_roh": 2.2,
           "boeen_ms_roh": 5.8,
           "sonne_std": 0.1,
           "symbol": "cloudy",
@@ -1032,30 +1026,30 @@
         {
           "datum": "2026-10-14",
           "tag": "tomorrow",
-          "max": 16.5,
-          "min": 8.5,
+          "max": 15.4,
+          "min": 9.6,
           "regen_prozent": 10,
           "regen_mm": 0,
-          "wind_kmh": 4.3,
-          "boeen_kmh": 20.5,
-          "wind_ms_roh": 1.2,
-          "boeen_ms_roh": 5.7,
-          "sonne_std": 7,
-          "symbol": "partlycloudy",
-          "text": "heiter"
+          "wind_kmh": 4.0,
+          "boeen_kmh": 19.4,
+          "wind_ms_roh": 1.1,
+          "boeen_ms_roh": 5.4,
+          "sonne_std": 5.8,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
         },
         {
           "datum": "2026-10-15",
           "tag": "thursday",
-          "max": 15.9,
-          "min": 7.1,
+          "max": 15.8,
+          "min": 6.7,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 3.2,
-          "boeen_kmh": 18.0,
-          "wind_ms_roh": 0.9,
-          "boeen_ms_roh": 5,
-          "sonne_std": 7.9,
+          "wind_kmh": 4.0,
+          "boeen_kmh": 19.1,
+          "wind_ms_roh": 1.1,
+          "boeen_ms_roh": 5.3,
+          "sonne_std": 7.3,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -1063,77 +1057,71 @@
       "tag0_roh": {
         "dateTime": "2026-10-13",
         "dayName": "today",
-        "tempMax": 11,
-        "tempMin": 5.8,
-        "precCurrent": 0.8,
+        "tempMax": 11.2,
+        "tempMin": 5.5,
+        "precCurrent": 1.6,
         "precProb": 37,
         "precProb1mm": 4,
         "precProb10mm": 0,
         "windGust": 5.8,
-        "windSpeed": 1.8,
-        "windDirection": 196,
+        "windSpeed": 2.2,
+        "windDirection": 197,
         "sunHours": 0.1,
-        "cloudCoverage": 86,
+        "cloudCoverage": 93,
         "weatherSymbol": "cloudy",
         "risks": [],
         "timeOfDay": {
           "night": {
             "timeOfDay": "night",
             "isDay": false,
-            "tempMax": 6.8,
-            "tempMin": 5.8,
+            "tempMax": 6.7,
+            "tempMin": 5.5,
             "precCurrent": 0,
-            "precProb": 14,
-            "precProb1mm": 0,
-            "precProb10mm": 0,
-            "windGust": 1.1,
-            "windSpeed": 0.1,
-            "windDirection": 319,
             "weatherSymbol": "partlycloudy",
             "risks": []
           },
           "morning": {
             "timeOfDay": "morning",
             "isDay": true,
-            "tempMax": 8,
+            "tempMax": 8.8,
             "tempMin": 6.5,
-            "precCurrent": 0.2,
+            "precCurrent": 0.9,
             "precProb": 34,
             "precProb1mm": 4,
             "precProb10mm": 0,
-            "windGust": 3.1,
-            "windSpeed": 0.7,
-            "windDirection": 174,
-            "weatherSymbol": "overcast",
+            "windGust": 3.9,
+            "windSpeed": 0.9,
+            "windDirection": 204,
+            "weatherSymbol": "cloudy",
             "risks": []
           },
           "afternoon": {
             "timeOfDay": "afternoon",
             "isDay": true,
-            "tempMax": 10.8,
-            "tempMin": 8.8,
+            "tempMax": 10.5,
+            "tempMin": 8.9,
             "precCurrent": 0.5,
             "precProb": 30,
             "precProb1mm": 4,
             "precProb10mm": 0,
-            "windGust": 4.3,
+            "windGust": 4.6,
             "windSpeed": 2.1,
-            "windDirection": 196,
+            "windDirection": 194,
             "weatherSymbol": "overcast",
             "risks": []
           },
           "evening": {
             "timeOfDay": "evening",
             "isDay": false,
-            "tempMax": 11,
-            "tempMin": 10.2,
-            "precCurrent": 0.1,
+            "tempMax": 11.2,
+            "tempMin": 10.1,
+            "precCurrent": 0.2,
             "precProb": 37,
             "precProb1mm": 1,
             "precProb10mm": 0,
             "windGust": 5.8,
-            "windSpeed": 3.3,
-            "windDirection": 200,
+            "windSpeed": 3.4,
+            "windDirection": 198,
             "weatherSymbol": "cloudy",
             "risks": []
           }
@@ -1143,7 +1131,7 @@
         "lat": 50.227,
         "lon": 8.618,
         "timeZone": "Europe/Berlin",
-        "run": "2026-10-13T12:26:30+02:00",
+        "run": "2026-10-13T12:57:31+02:00",
         "nextFullMoon": "2026-10-26T05:13:07+01:00",
         "nextNewMoon": "2026-11-09T08:02:30+01:00",
         "dailyData": [
@@ -1838,9 +1826,9 @@
           "max": 11.1,
           "min": 5.8,
           "regen_prozent": 53,
-          "regen_mm": 2.0,
-          "wind_kmh": 9.6,
-          "boeen_kmh": 20.5,
+          "regen_mm": 0.7,
+          "wind_kmh": 9.8,
+          "boeen_kmh": 22.3,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -1850,9 +1838,9 @@
           "min": 8.1,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 6.5,
-          "boeen_kmh": 16.6,
-          "sonne_std": 6.7,
+          "wind_kmh": 6.6,
+          "boeen_kmh": 16.2,
+          "sonne_std": 8.9,
           "text": "Nebel"
         },
         {
@@ -1863,7 +1851,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 8.3,
           "boeen_kmh": 25.6,
-          "sonne_std": 9.4,
+          "sonne_std": 8.4,
           "text": "Nebel"
         }
       ],
@@ -1943,13 +1931,13 @@
         {
           "zeit": "12:00",
           "temp": 10.4,
-          "regen_mm": 0.6,
+          "regen_mm": 0.1,
           "regen_prozent": 21
         },
         {
           "zeit": "13:00",
           "temp": 9.9,
-          "regen_mm": 0.7,
+          "regen_mm": 0.1,
           "regen_prozent": 35
         },
         {
@@ -2009,7 +1997,7 @@
         {
           "zeit": "23:00",
           "temp": 10.8,
-          "regen_mm": 0.3,
+          "regen_mm": 0.1,
           "regen_prozent": 53
         }
       ]
@@ -2022,7 +2010,7 @@
         "lat": 50.111,
         "lon": 8.682,
         "timeZone": "Europe/Berlin",
-        "run": "2026-10-13T12:26:31+02:00",
+        "run": "2026-10-13T12:57:31+02:00",
         "nextFullMoon": "2026-10-26T05:13:07+01:00",
         "nextNewMoon": "2026-11-09T08:02:30+01:00",
         "dailyData": [
@@ -2259,9 +2247,9 @@
           "max": 12.1,
           "min": 7.0,
           "regen_prozent": 57,
-          "regen_mm": 2.0,
-          "wind_kmh": 8.7,
-          "boeen_kmh": 19.4,
+          "regen_mm": 1.0,
+          "wind_kmh": 9.4,
+          "boeen_kmh": 20.9,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -2271,9 +2259,9 @@
           "min": 9.2,
           "regen_prozent": 55,
           "regen_mm": 0.0,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 20.2,
-          "sonne_std": 7.9,
+          "wind_kmh": 8.4,
+          "boeen_kmh": 20.9,
+          "sonne_std": 7.1,
           "text": "Nebel"
         },
         {
@@ -2364,19 +2352,19 @@
         {
           "zeit": "12:00",
           "temp": 10.4,
-          "regen_mm": 0.4,
+          "regen_mm": 0.0,
           "regen_prozent": 18
         },
         {
           "zeit": "13:00",
           "temp": 10.5,
-          "regen_mm": 1.2,
+          "regen_mm": 0.5,
           "regen_prozent": 26
         },
         {
           "zeit": "14:00",
           "temp": 11.0,
-          "regen_mm": 0.0,
+          "regen_mm": 0.2,
           "regen_prozent": 33
         },
         {
@@ -2430,7 +2418,7 @@
         {
           "zeit": "23:00",
           "temp": 12.1,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 57
         }
       ],
@@ -2440,9 +2428,9 @@
           "max": 12.1,
           "min": 7.0,
           "regen_prozent": 57,
-          "regen_mm": 2.0,
-          "wind_kmh": 8.7,
-          "boeen_kmh": 19.4,
+          "regen_mm": 1.0,
+          "wind_kmh": 9.4,
+          "boeen_kmh": 20.9,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -2452,9 +2440,9 @@
           "min": 9.2,
           "regen_prozent": 55,
           "regen_mm": 0.0,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 20.2,
-          "sonne_std": 7.9,
+          "wind_kmh": 8.4,
+          "boeen_kmh": 20.9,
+          "sonne_std": 7.1,
           "text": "Nebel"
         },
         {
@@ -2480,13 +2468,13 @@
           "datum": "2026-10-14",
           "tag": "tomorrow",
           "max": 16.3,
-          "min": 12.6,
+          "min": 12.7,
           "regen_prozent": 1,
           "regen_mm": 0,
-          "wind_kmh": 14.4,
-          "boeen_kmh": 46.1,
-          "wind_ms_roh": 4,
-          "boeen_ms_roh": 12.8,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 44.6,
+          "wind_ms_roh": 4.1,
+          "boeen_ms_roh": 12.4,
           "sonne_std": null,
           "symbol": "partlycloudy",
           "text": "heiter"
@@ -2495,14 +2483,14 @@
           "datum": "2026-10-15",
           "tag": "thursday",
           "max": 19.5,
-          "min": 11.2,
+          "min": 10.9,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 19.8,
+          "wind_kmh": 20.2,
           "boeen_kmh": 36.0,
-          "wind_ms_roh": 5.5,
+          "wind_ms_roh": 5.6,
           "boeen_ms_roh": 10,
-          "sonne_std": 4.3,
+          "sonne_std": 2.4,
           "symbol": "cloudy",
           "text": "bewoelkt"
         },
@@ -2526,45 +2514,45 @@
         "dateTime": "2026-10-14",
         "dayName": "tomorrow",
         "tempMax": 16.3,
-        "tempMin": 12.6,
+        "tempMin": 12.7,
         "precCurrent": 0,
         "precProb": 1,
         "precProb1mm": 0,
         "precProb10mm": 0,
-        "windGust": 12.8,
-        "windSpeed": 4,
-        "windDirection": 255,
-        "cloudCoverage": 50,
+        "windGust": 12.4,
+        "windSpeed": 4.1,
+        "windDirection": 252,
+        "cloudCoverage": 51,
         "weatherSymbol": "partlycloudy",
         "risks": [],
         "timeOfDay": {
           "night": {
             "timeOfDay": "night",
             "isDay": false,
-            "tempMax": 15.7,
+            "tempMax": 15.6,
             "tempMin": 13.7,
             "precCurrent": 0,
             "precProb": 0,
             "precProb1mm": 0,
             "precProb10mm": 0,
-            "windGust": 12.8,
-            "windSpeed": 6,
-            "windDirection": 305,
+            "windGust": 12.4,
+            "windSpeed": 6.2,
+            "windDirection": 308,
             "weatherSymbol": "partlycloudy",
             "risks": []
           },
           "morning": {
             "timeOfDay": "morning",
             "isDay": true,
-            "tempMax": 15.7,
-            "tempMin": 12.6,
+            "tempMax": 15.6,
+            "tempMin": 12.7,
             "precCurrent": 0,
             "precProb": 0,
             "precProb1mm": 0,
             "precProb10mm": 0,
-            "windGust": 6.9,
-            "windSpeed": 2.6,
-            "windDirection": 274,
+            "windGust": 6.8,
+            "windSpeed": 2.4,
+            "windDirection": 261,
             "weatherSymbol": "partlycloudy",
             "risks": []
           },
@@ -2572,29 +2560,29 @@
             "timeOfDay": "afternoon",
             "isDay": true,
             "tempMax": 16.3,
-            "tempMin": 15.4,
+            "tempMin": 15.7,
             "precCurrent": 0,
             "precProb": 1,
             "precProb1mm": 0,
             "precProb10mm": 0,
-            "windGust": 7.7,
-            "windSpeed": 4,
-            "windDirection": 225,
-            "weatherSymbol": "partlycloudy",
+            "windGust": 7.9,
+            "windSpeed": 4.1,
+            "windDirection": 221,
+            "weatherSymbol": "cloudy",
             "risks": []
           },
           "evening": {
             "timeOfDay": "evening",
             "isDay": false,
-            "tempMax": 14,
-            "tempMin": 12.7,
+            "tempMax": 14.3,
+            "tempMin": 12.9,
             "precCurrent": 0,
             "precProb": 0,
             "precProb1mm": 0,
             "precProb10mm": 0,
-            "windGust": 6.9,
-            "windSpeed": 3.5,
-            "windDirection": 181,
+            "windGust": 7,
+            "windSpeed": 3.6,
+            "windDirection": 183,
             "weatherSymbol": "partlycloudy",
             "risks": []
           }
@@ -2604,7 +2592,7 @@
         "lat": 51.816,
         "lon": 3.925,
         "timeZone": "Europe/Amsterdam",
-        "run": "2026-10-13T12:26:32+02:00",
+        "run": "2026-10-13T12:57:32+02:00",
         "nextFullMoon": "2026-10-26T05:13:07+01:00",
         "nextNewMoon": "2026-11-09T08:02:30+01:00",
         "dailyData": [
@@ -3301,35 +3289,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.1,
+          "max": 18.6,
           "min": 14.7,
           "regen_prozent": 37,
-          "regen_mm": 0.2,
-          "wind_kmh": 34.6,
-          "boeen_kmh": 64.1,
-          "sonne_std": 1.1,
+          "regen_mm": 0.3,
+          "wind_kmh": 33.8,
+          "boeen_kmh": 60.5,
+          "sonne_std": 0.8,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.5,
-          "min": 13.0,
+          "max": 17.1,
+          "min": 12.9,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 24.1,
-          "boeen_kmh": 48.2,
+          "wind_kmh": 27.4,
+          "boeen_kmh": 46.8,
           "sonne_std": 9.3,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.3,
+          "max": 19.8,
           "min": 12.1,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 16.6,
-          "boeen_kmh": 31.3,
-          "sonne_std": 8.0,
+          "wind_kmh": 17.3,
+          "boeen_kmh": 30.2,
+          "sonne_std": 8.6,
           "text": "bedeckt"
         }
       ],
@@ -3402,13 +3390,13 @@
         },
         {
           "zeit": "11:00",
-          "temp": 16.1,
+          "temp": 16.0,
           "regen_mm": 0.0,
           "regen_prozent": 6
         },
         {
           "zeit": "12:00",
-          "temp": 16.5,
+          "temp": 16.2,
           "regen_mm": 0.0,
           "regen_prozent": 11
         },
@@ -3420,43 +3408,43 @@
         },
         {
           "zeit": "14:00",
-          "temp": 18.0,
+          "temp": 17.3,
           "regen_mm": 0.0,
           "regen_prozent": 22
         },
         {
           "zeit": "15:00",
-          "temp": 19.1,
+          "temp": 18.6,
           "regen_mm": 0.0,
           "regen_prozent": 29
         },
         {
           "zeit": "16:00",
-          "temp": 18.4,
+          "temp": 18.2,
           "regen_mm": 0.0,
           "regen_prozent": 36
         },
         {
           "zeit": "17:00",
-          "temp": 17.9,
-          "regen_mm": 0.0,
+          "temp": 17.8,
+          "regen_mm": 0.1,
           "regen_prozent": 37
         },
         {
           "zeit": "18:00",
-          "temp": 18.0,
+          "temp": 17.9,
           "regen_mm": 0.0,
           "regen_prozent": 27
         },
         {
           "zeit": "19:00",
-          "temp": 17.5,
+          "temp": 17.2,
           "regen_mm": 0.0,
           "regen_prozent": 12
         },
         {
           "zeit": "20:00",
-          "temp": 16.9,
+          "temp": 16.6,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
@@ -3468,13 +3456,13 @@
         },
         {
           "zeit": "22:00",
-          "temp": 16.4,
+          "temp": 16.3,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "23:00",
-          "temp": 16.5,
+          "temp": 16.6,
           "regen_mm": 0.0,
           "regen_prozent": 0
         }
@@ -3490,9 +3478,9 @@
           "max": 10.8,
           "min": 4.5,
           "regen_prozent": 41,
-          "regen_mm": 2.6,
-          "wind_kmh": 13.3,
-          "boeen_kmh": 27.0,
+          "regen_mm": 1.0,
+          "wind_kmh": 13.4,
+          "boeen_kmh": 26.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -3502,9 +3490,9 @@
           "min": 5.8,
           "regen_prozent": 36,
           "regen_mm": 0.0,
-          "wind_kmh": 10.1,
-          "boeen_kmh": 20.5,
-          "sonne_std": 6.0,
+          "wind_kmh": 9.5,
+          "boeen_kmh": 19.8,
+          "sonne_std": 7.9,
           "text": "Nebel"
         },
         {
@@ -3515,7 +3503,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 11.5,
           "boeen_kmh": 23.4,
-          "sonne_std": 7.6,
+          "sonne_std": 7.5,
           "text": "Nebel"
         }
       ],
@@ -3601,7 +3589,7 @@
         {
           "zeit": "13:00",
           "temp": 9.3,
-          "regen_mm": 1.9,
+          "regen_mm": 0.6,
           "regen_prozent": 22
         },
         {
@@ -3619,7 +3607,7 @@
         {
           "zeit": "16:00",
           "temp": 10.4,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 26
         },
         {
@@ -3661,7 +3649,7 @@
         {
           "zeit": "23:00",
           "temp": 10.8,
-          "regen_mm": 0.2,
+          "regen_mm": 0.0,
           "regen_prozent": 41
         }
       ],
@@ -3671,9 +3659,9 @@
           "max": 10.8,
           "min": 4.5,
           "regen_prozent": 41,
-          "regen_mm": 2.6,
-          "wind_kmh": 13.3,
-          "boeen_kmh": 27.0,
+          "regen_mm": 1.0,
+          "wind_kmh": 13.4,
+          "boeen_kmh": 26.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -3683,9 +3671,9 @@
           "min": 5.8,
           "regen_prozent": 36,
           "regen_mm": 0.0,
-          "wind_kmh": 10.1,
-          "boeen_kmh": 20.5,
-          "sonne_std": 6.0,
+          "wind_kmh": 9.5,
+          "boeen_kmh": 19.8,
+          "sonne_std": 7.9,
           "text": "Nebel"
         },
         {
@@ -3696,7 +3684,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 11.5,
           "boeen_kmh": 23.4,
-          "sonne_std": 7.6,
+          "sonne_std": 7.5,
           "text": "Nebel"
         }
       ],
@@ -3712,9 +3700,9 @@
           "max": 12.1,
           "min": 5.8,
           "regen_prozent": 41,
-          "regen_mm": 1.5,
+          "regen_mm": 1.3,
           "wind_kmh": 11.5,
-          "boeen_kmh": 25.6,
+          "boeen_kmh": 24.1,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -3724,9 +3712,9 @@
           "min": 7.7,
           "regen_prozent": 36,
           "regen_mm": 0.0,
-          "wind_kmh": 12.8,
-          "boeen_kmh": 27.7,
-          "sonne_std": 6.8,
+          "wind_kmh": 12.2,
+          "boeen_kmh": 25.9,
+          "sonne_std": 7.0,
           "text": "Nebel"
         },
         {
@@ -3737,7 +3725,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 9.7,
           "boeen_kmh": 22.3,
-          "sonne_std": 7.1,
+          "sonne_std": 7.2,
           "text": "Nebel"
         }
       ],
@@ -3817,19 +3805,19 @@
         {
           "zeit": "12:00",
           "temp": 10.0,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 17
         },
         {
           "zeit": "13:00",
           "temp": 10.1,
-          "regen_mm": 1.2,
+          "regen_mm": 0.4,
           "regen_prozent": 22
         },
         {
           "zeit": "14:00",
           "temp": 10.4,
-          "regen_mm": 0.0,
+          "regen_mm": 0.2,
           "regen_prozent": 27
         },
         {
@@ -3883,7 +3871,7 @@
         {
           "zeit": "23:00",
           "temp": 12.1,
-          "regen_mm": 0.0,
+          "regen_mm": 0.5,
           "regen_prozent": 41
         }
       ],
@@ -3893,9 +3881,9 @@
           "max": 12.1,
           "min": 5.8,
           "regen_prozent": 41,
-          "regen_mm": 1.5,
+          "regen_mm": 1.3,
           "wind_kmh": 11.5,
-          "boeen_kmh": 25.6,
+          "boeen_kmh": 24.1,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -3905,9 +3893,9 @@
           "min": 7.7,
           "regen_prozent": 36,
           "regen_mm": 0.0,
-          "wind_kmh": 12.8,
-          "boeen_kmh": 27.7,
-          "sonne_std": 6.8,
+          "wind_kmh": 12.2,
+          "boeen_kmh": 25.9,
+          "sonne_std": 7.0,
           "text": "Nebel"
         },
         {
@@ -3918,7 +3906,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 9.7,
           "boeen_kmh": 22.3,
-          "sonne_std": 7.1,
+          "sonne_std": 7.2,
           "text": "Nebel"
         }
       ],
@@ -3934,8 +3922,8 @@
           "max": 11.1,
           "min": 7.2,
           "regen_prozent": 65,
-          "regen_mm": 0.8,
-          "wind_kmh": 4.4,
+          "regen_mm": 0.6,
+          "wind_kmh": 4.3,
           "boeen_kmh": 9.0,
           "sonne_std": 0.0,
           "text": "Regenschauer"
@@ -3946,9 +3934,9 @@
           "min": 8.8,
           "regen_prozent": 54,
           "regen_mm": 0.0,
-          "wind_kmh": 7.7,
-          "boeen_kmh": 13.7,
-          "sonne_std": 10.0,
+          "wind_kmh": 5.9,
+          "boeen_kmh": 13.0,
+          "sonne_std": 8.2,
           "text": "Nebel"
         },
         {
@@ -3959,7 +3947,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 4.7,
           "boeen_kmh": 31.3,
-          "sonne_std": 9.2,
+          "sonne_std": 8.3,
           "text": "Nebel"
         }
       ],
@@ -4039,7 +4027,7 @@
         {
           "zeit": "12:00",
           "temp": 9.7,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 18
         },
         {
@@ -4099,7 +4087,7 @@
         {
           "zeit": "22:00",
           "temp": 10.8,
-          "regen_mm": 0.2,
+          "regen_mm": 0.1,
           "regen_prozent": 50
         },
         {
@@ -4115,8 +4103,8 @@
           "max": 11.1,
           "min": 7.2,
           "regen_prozent": 65,
-          "regen_mm": 0.8,
-          "wind_kmh": 4.4,
+          "regen_mm": 0.6,
+          "wind_kmh": 4.3,
           "boeen_kmh": 9.0,
           "sonne_std": 0.0,
           "text": "Regenschauer"
@@ -4127,9 +4115,9 @@
           "min": 8.8,
           "regen_prozent": 54,
           "regen_mm": 0.0,
-          "wind_kmh": 7.7,
-          "boeen_kmh": 13.7,
-          "sonne_std": 10.0,
+          "wind_kmh": 5.9,
+          "boeen_kmh": 13.0,
+          "sonne_std": 8.2,
           "text": "Nebel"
         },
         {
@@ -4140,7 +4128,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 4.7,
           "boeen_kmh": 31.3,
-          "sonne_std": 9.2,
+          "sonne_std": 8.3,
           "text": "Nebel"
         }
       ],
@@ -4157,8 +4145,8 @@
           "min": 5.0,
           "regen_prozent": 63,
           "regen_mm": 0.3,
-          "wind_kmh": 10.7,
-          "boeen_kmh": 29.9,
+          "wind_kmh": 10.5,
+          "boeen_kmh": 26.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -4167,10 +4155,10 @@
           "max": 18.3,
           "min": 10.5,
           "regen_prozent": 90,
-          "regen_mm": 1.9,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 22.7,
-          "sonne_std": 9.4,
+          "regen_mm": 2.3,
+          "wind_kmh": 10.2,
+          "boeen_kmh": 23.4,
+          "sonne_std": 9.6,
           "text": "Regenschauer"
         },
         {
@@ -4181,7 +4169,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 6.6,
           "boeen_kmh": 14.4,
-          "sonne_std": 10.0,
+          "sonne_std": 9.2,
           "text": "Nebel"
         }
       ],
@@ -4315,13 +4303,13 @@
         {
           "zeit": "21:00",
           "temp": 16.5,
-          "regen_mm": 0.0,
+          "regen_mm": 0.2,
           "regen_prozent": 37
         },
         {
           "zeit": "22:00",
           "temp": 16.3,
-          "regen_mm": 0.2,
+          "regen_mm": 0.0,
           "regen_prozent": 50
         },
         {
@@ -4338,8 +4326,8 @@
           "min": 5.0,
           "regen_prozent": 63,
           "regen_mm": 0.3,
-          "wind_kmh": 10.7,
-          "boeen_kmh": 29.9,
+          "wind_kmh": 10.5,
+          "boeen_kmh": 26.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -4348,10 +4336,10 @@
           "max": 18.3,
           "min": 10.5,
           "regen_prozent": 90,
-          "regen_mm": 1.9,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 22.7,
-          "sonne_std": 9.4,
+          "regen_mm": 2.3,
+          "wind_kmh": 10.2,
+          "boeen_kmh": 23.4,
+          "sonne_std": 9.6,
           "text": "Regenschauer"
         },
         {
@@ -4362,7 +4350,7 @@
           "regen_mm": 0.0,
           "wind_kmh": 6.6,
           "boeen_kmh": 14.4,
-          "sonne_std": 10.0,
+          "sonne_std": 9.2,
           "text": "Nebel"
         }
       ],
@@ -4378,9 +4366,9 @@
           "max": 12.6,
           "min": 1.3,
           "regen_prozent": 49,
-          "regen_mm": 0.4,
-          "wind_kmh": 12.2,
-          "boeen_kmh": 21.6,
+          "regen_mm": 0.1,
+          "wind_kmh": 11.5,
+          "boeen_kmh": 22.0,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -4390,9 +4378,9 @@
           "min": 8.0,
           "regen_prozent": 51,
           "regen_mm": 0.0,
-          "wind_kmh": 10.4,
-          "boeen_kmh": 18.4,
-          "sonne_std": 8.1,
+          "wind_kmh": 10.6,
+          "boeen_kmh": 19.1,
+          "sonne_std": 7.3,
           "text": "Nebel"
         },
         {
@@ -4402,7 +4390,7 @@
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 3.8,
-          "boeen_kmh": 10.1,
+          "boeen_kmh": 9.7,
           "sonne_std": 5.5,
           "text": "Nebel"
         }
@@ -4483,19 +4471,19 @@
         {
           "zeit": "12:00",
           "temp": 10.7,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 14
         },
         {
           "zeit": "13:00",
           "temp": 11.7,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 22
         },
         {
           "zeit": "14:00",
           "temp": 12.0,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 29
         },
         {
@@ -4559,9 +4547,9 @@
           "max": 12.6,
           "min": 1.3,
           "regen_prozent": 49,
-          "regen_mm": 0.4,
-          "wind_kmh": 12.2,
-          "boeen_kmh": 21.6,
+          "regen_mm": 0.1,
+          "wind_kmh": 11.5,
+          "boeen_kmh": 22.0,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -4571,9 +4559,9 @@
           "min": 8.0,
           "regen_prozent": 51,
           "regen_mm": 0.0,
-          "wind_kmh": 10.4,
-          "boeen_kmh": 18.4,
-          "sonne_std": 8.1,
+          "wind_kmh": 10.6,
+          "boeen_kmh": 19.1,
+          "sonne_std": 7.3,
           "text": "Nebel"
         },
         {
@@ -4583,7 +4571,7 @@
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 3.8,
-          "boeen_kmh": 10.1,
+          "boeen_kmh": 9.7,
           "sonne_std": 5.5,
           "text": "Nebel"
         }
@@ -4600,9 +4588,9 @@
           "max": 11.8,
           "min": 8.7,
           "regen_prozent": 53,
-          "regen_mm": 1.3,
+          "regen_mm": 1.2,
           "wind_kmh": 4.3,
-          "boeen_kmh": 12.6,
+          "boeen_kmh": 11.2,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -4613,8 +4601,8 @@
           "regen_prozent": 49,
           "regen_mm": 0.0,
           "wind_kmh": 4.7,
-          "boeen_kmh": 17.6,
-          "sonne_std": 9.3,
+          "boeen_kmh": 13.0,
+          "sonne_std": 7.4,
           "text": "Nebel"
         },
         {
@@ -4705,7 +4693,7 @@
         {
           "zeit": "12:00",
           "temp": 10.1,
-          "regen_mm": 0.8,
+          "regen_mm": 0.0,
           "regen_prozent": 14
         },
         {
@@ -4765,13 +4753,13 @@
         {
           "zeit": "22:00",
           "temp": 11.6,
-          "regen_mm": 0.3,
+          "regen_mm": 1.1,
           "regen_prozent": 42
         },
         {
           "zeit": "23:00",
           "temp": 11.8,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 53
         }
       ],
@@ -4781,9 +4769,9 @@
           "max": 11.8,
           "min": 8.7,
           "regen_prozent": 53,
-          "regen_mm": 1.3,
+          "regen_mm": 1.2,
           "wind_kmh": 4.3,
-          "boeen_kmh": 12.6,
+          "boeen_kmh": 11.2,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -4794,8 +4782,8 @@
           "regen_prozent": 49,
           "regen_mm": 0.0,
           "wind_kmh": 4.7,
-          "boeen_kmh": 17.6,
-          "sonne_std": 9.3,
+          "boeen_kmh": 13.0,
+          "sonne_std": 7.4,
           "text": "Nebel"
         },
         {
@@ -4822,8 +4810,8 @@
           "max": 11.9,
           "min": 5.9,
           "regen_prozent": 53,
-          "regen_mm": 0.4,
-          "wind_kmh": 3.3,
+          "regen_mm": 0.1,
+          "wind_kmh": 3.2,
           "boeen_kmh": 12.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -4834,8 +4822,8 @@
           "min": 8.4,
           "regen_prozent": 49,
           "regen_mm": 0.0,
-          "wind_kmh": 6.6,
-          "boeen_kmh": 17.6,
+          "wind_kmh": 4.5,
+          "boeen_kmh": 14.4,
           "sonne_std": 7.8,
           "text": "Nebel"
         },
@@ -4927,7 +4915,7 @@
         {
           "zeit": "12:00",
           "temp": 10.1,
-          "regen_mm": 0.2,
+          "regen_mm": 0.0,
           "regen_prozent": 14
         },
         {
@@ -4993,7 +4981,7 @@
         {
           "zeit": "23:00",
           "temp": 11.4,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 53
         }
       ],
@@ -5003,8 +4991,8 @@
           "max": 11.9,
           "min": 5.9,
           "regen_prozent": 53,
-          "regen_mm": 0.4,
-          "wind_kmh": 3.3,
+          "regen_mm": 0.1,
+          "wind_kmh": 3.2,
           "boeen_kmh": 12.6,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -5015,8 +5003,8 @@
           "min": 8.4,
           "regen_prozent": 49,
           "regen_mm": 0.0,
-          "wind_kmh": 6.6,
-          "boeen_kmh": 17.6,
+          "wind_kmh": 4.5,
+          "boeen_kmh": 14.4,
           "sonne_std": 7.8,
           "text": "Nebel"
         },
@@ -5044,8 +5032,8 @@
           "max": 13.8,
           "min": 6.9,
           "regen_prozent": 47,
-          "regen_mm": 0.4,
-          "wind_kmh": 10.5,
+          "regen_mm": 0.1,
+          "wind_kmh": 10.6,
           "boeen_kmh": 24.1,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -5056,8 +5044,8 @@
           "min": 10.2,
           "regen_prozent": 86,
           "regen_mm": 0.0,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 23.4,
+          "wind_kmh": 10.1,
+          "boeen_kmh": 24.1,
           "sonne_std": 8.6,
           "text": "Nebel"
         },
@@ -5067,7 +5055,7 @@
           "min": 5.9,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 4.2,
+          "wind_kmh": 4.6,
           "boeen_kmh": 12.6,
           "sonne_std": 7.7,
           "text": "Nebel"
@@ -5155,19 +5143,19 @@
         {
           "zeit": "13:00",
           "temp": 12.1,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 19
         },
         {
           "zeit": "14:00",
           "temp": 12.5,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 19
         },
         {
           "zeit": "15:00",
           "temp": 12.7,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 19
         },
         {
@@ -5225,8 +5213,8 @@
           "max": 13.8,
           "min": 6.9,
           "regen_prozent": 47,
-          "regen_mm": 0.4,
-          "wind_kmh": 10.5,
+          "regen_mm": 0.1,
+          "wind_kmh": 10.6,
           "boeen_kmh": 24.1,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -5237,8 +5225,8 @@
           "min": 10.2,
           "regen_prozent": 86,
           "regen_mm": 0.0,
-          "wind_kmh": 9.7,
-          "boeen_kmh": 23.4,
+          "wind_kmh": 10.1,
+          "boeen_kmh": 24.1,
           "sonne_std": 8.6,
           "text": "Nebel"
         },
@@ -5248,7 +5236,7 @@
           "min": 5.9,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 4.2,
+          "wind_kmh": 4.6,
           "boeen_kmh": 12.6,
           "sonne_std": 7.7,
           "text": "Nebel"
@@ -5266,9 +5254,9 @@
           "max": 12.3,
           "min": 5.3,
           "regen_prozent": 57,
-          "regen_mm": 2.5,
-          "wind_kmh": 8.7,
-          "boeen_kmh": 19.1,
+          "regen_mm": 0.9,
+          "wind_kmh": 9.4,
+          "boeen_kmh": 20.5,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -5278,8 +5266,8 @@
           "min": 8.3,
           "regen_prozent": 55,
           "regen_mm": 0.0,
-          "wind_kmh": 10.5,
-          "boeen_kmh": 23.8,
+          "wind_kmh": 10.2,
+          "boeen_kmh": 23.4,
           "sonne_std": 6.6,
           "text": "Nebel"
         },
@@ -5371,13 +5359,13 @@
         {
           "zeit": "12:00",
           "temp": 10.4,
-          "regen_mm": 0.3,
+          "regen_mm": 0.0,
           "regen_prozent": 18
         },
         {
           "zeit": "13:00",
           "temp": 10.5,
-          "regen_mm": 1.6,
+          "regen_mm": 0.6,
           "regen_prozent": 26
         },
         {
@@ -5437,7 +5425,7 @@
         {
           "zeit": "23:00",
           "temp": 12.3,
-          "regen_mm": 0.3,
+          "regen_mm": 0.0,
           "regen_prozent": 57
         }
       ],
@@ -5447,9 +5435,9 @@
           "max": 12.3,
           "min": 5.3,
           "regen_prozent": 57,
-          "regen_mm": 2.5,
-          "wind_kmh": 8.7,
-          "boeen_kmh": 19.1,
+          "regen_mm": 0.9,
+          "wind_kmh": 9.4,
+          "boeen_kmh": 20.5,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -5459,8 +5447,8 @@
           "min": 8.3,
           "regen_prozent": 55,
           "regen_mm": 0.0,
-          "wind_kmh": 10.5,
-          "boeen_kmh": 23.8,
+          "wind_kmh": 10.2,
+          "boeen_kmh": 23.4,
           "sonne_std": 6.6,
           "text": "Nebel"
         },
@@ -5485,35 +5473,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 16.3,
+          "max": 16.1,
           "min": 11.1,
           "regen_prozent": 84,
-          "regen_mm": 1.8,
-          "wind_kmh": 15.5,
-          "boeen_kmh": 31.0,
+          "regen_mm": 1.5,
+          "wind_kmh": 14.4,
+          "boeen_kmh": 29.5,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
-          "min": 12.1,
+          "max": 17.7,
+          "min": 12.6,
           "regen_prozent": 30,
           "regen_mm": 0.0,
-          "wind_kmh": 14.0,
-          "boeen_kmh": 28.1,
-          "sonne_std": 9.9,
+          "wind_kmh": 15.1,
+          "boeen_kmh": 29.2,
+          "sonne_std": 9.2,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 20.3,
+          "max": 20.2,
           "min": 9.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 9.0,
-          "boeen_kmh": 18.0,
-          "sonne_std": 10.0,
+          "boeen_kmh": 17.3,
+          "sonne_std": 9.8,
           "text": "bedeckt"
         }
       ],
@@ -5580,85 +5568,85 @@
         },
         {
           "zeit": "10:00",
-          "temp": 11.2,
+          "temp": 12.3,
           "regen_mm": 0.0,
           "regen_prozent": 81
         },
         {
           "zeit": "11:00",
-          "temp": 11.6,
-          "regen_mm": 0.0,
+          "temp": 11.3,
+          "regen_mm": 0.2,
           "regen_prozent": 84
         },
         {
           "zeit": "12:00",
-          "temp": 12.1,
-          "regen_mm": 0.0,
+          "temp": 11.4,
+          "regen_mm": 0.1,
           "regen_prozent": 71
         },
         {
           "zeit": "13:00",
-          "temp": 12.7,
-          "regen_mm": 0.1,
+          "temp": 12.1,
+          "regen_mm": 0.0,
           "regen_prozent": 48
         },
         {
           "zeit": "14:00",
-          "temp": 13.0,
+          "temp": 12.6,
           "regen_mm": 0.0,
           "regen_prozent": 31
         },
         {
           "zeit": "15:00",
-          "temp": 13.3,
+          "temp": 13.0,
           "regen_mm": 0.0,
           "regen_prozent": 24
         },
         {
           "zeit": "16:00",
           "temp": 13.4,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 22
         },
         {
           "zeit": "17:00",
-          "temp": 13.2,
-          "regen_mm": 0.4,
+          "temp": 13.4,
+          "regen_mm": 0.2,
           "regen_prozent": 27
         },
         {
           "zeit": "18:00",
-          "temp": 13.8,
+          "temp": 14.1,
           "regen_mm": 0.0,
           "regen_prozent": 44
         },
         {
           "zeit": "19:00",
-          "temp": 14.2,
+          "temp": 14.6,
           "regen_mm": 0.0,
           "regen_prozent": 68
         },
         {
           "zeit": "20:00",
-          "temp": 14.2,
-          "regen_mm": 0.4,
+          "temp": 14.3,
+          "regen_mm": 0.3,
           "regen_prozent": 82
         },
         {
           "zeit": "21:00",
           "temp": 14.5,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 77
         },
         {
           "zeit": "22:00",
-          "temp": 16.0,
+          "temp": 16.1,
           "regen_mm": 0.0,
           "regen_prozent": 63
         },
         {
           "zeit": "23:00",
-          "temp": 16.3,
+          "temp": 15.8,
           "regen_mm": 0.0,
           "regen_prozent": 47
         }
@@ -5666,35 +5654,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 16.3,
+          "max": 16.1,
           "min": 11.1,
           "regen_prozent": 84,
-          "regen_mm": 1.8,
-          "wind_kmh": 15.5,
-          "boeen_kmh": 31.0,
+          "regen_mm": 1.5,
+          "wind_kmh": 14.4,
+          "boeen_kmh": 29.5,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
-          "min": 12.1,
+          "max": 17.7,
+          "min": 12.6,
           "regen_prozent": 30,
           "regen_mm": 0.0,
-          "wind_kmh": 14.0,
-          "boeen_kmh": 28.1,
-          "sonne_std": 9.9,
+          "wind_kmh": 15.1,
+          "boeen_kmh": 29.2,
+          "sonne_std": 9.2,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 20.3,
+          "max": 20.2,
           "min": 9.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 9.0,
-          "boeen_kmh": 18.0,
-          "sonne_std": 10.0,
+          "boeen_kmh": 17.3,
+          "sonne_std": 9.8,
           "text": "bedeckt"
         }
       ],
@@ -5708,14 +5696,14 @@
         {
           "datum": "2026-10-13",
           "tag": "today",
-          "max": 10.8,
-          "min": 5.7,
+          "max": 10.7,
+          "min": 5.2,
           "regen_prozent": 45,
-          "regen_mm": 0.6,
-          "wind_kmh": 6.5,
-          "boeen_kmh": 19.1,
-          "wind_ms_roh": 1.8,
-          "boeen_ms_roh": 5.3,
+          "regen_mm": 2.4,
+          "wind_kmh": 7.2,
+          "boeen_kmh": 18.4,
+          "wind_ms_roh": 2,
+          "boeen_ms_roh": 5.1,
           "sonne_std": 0.1,
           "symbol": "cloudy",
           "text": "bewoelkt"
@@ -5723,30 +5711,30 @@
         {
           "datum": "2026-10-14",
           "tag": "tomorrow",
-          "max": 16.1,
-          "min": 8.5,
+          "max": 15.2,
+          "min": 9.1,
           "regen_prozent": 6,
           "regen_mm": 0,
-          "wind_kmh": 5.4,
-          "boeen_kmh": 21.6,
-          "wind_ms_roh": 1.5,
-          "boeen_ms_roh": 6,
-          "sonne_std": 7.6,
-          "symbol": "partlycloudy",
-          "text": "heiter"
+          "wind_kmh": 3.6,
+          "boeen_kmh": 19.4,
+          "wind_ms_roh": 1,
+          "boeen_ms_roh": 5.4,
+          "sonne_std": 6,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
         },
         {
           "datum": "2026-10-15",
           "tag": "thursday",
           "max": 15.7,
-          "min": 7.4,
+          "min": 6.8,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 3.6,
-          "boeen_kmh": 18.7,
-          "wind_ms_roh": 1,
-          "boeen_ms_roh": 5.2,
-          "sonne_std": 7.9,
+          "wind_kmh": 4.0,
+          "boeen_kmh": 18.4,
+          "wind_ms_roh": 1.1,
+          "boeen_ms_roh": 5.1,
+          "sonne_std": 7.4,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -5757,9 +5745,9 @@
           "max": 10.7,
           "min": 6.8,
           "regen_prozent": 41,
-          "regen_mm": 2.5,
-          "wind_kmh": 11.3,
-          "boeen_kmh": 23.8,
+          "regen_mm": 0.6,
+          "wind_kmh": 11.1,
+          "boeen_kmh": 25.2,
           "sonne_std": 0.0,
           "text": "leichter Regen"
         },
@@ -5769,8 +5757,8 @@
           "min": 8.9,
           "regen_prozent": 36,
           "regen_mm": 0.0,
-          "wind_kmh": 9.0,
-          "boeen_kmh": 27.0,
+          "wind_kmh": 6.5,
+          "boeen_kmh": 15.8,
           "sonne_std": 9.7,
           "text": "Nebel"
         },
@@ -5862,13 +5850,13 @@
         {
           "zeit": "12:00",
           "temp": 10.0,
-          "regen_mm": 0.6,
+          "regen_mm": 0.1,
           "regen_prozent": 17
         },
         {
           "zeit": "13:00",
           "temp": 9.6,
-          "regen_mm": 0.6,
+          "regen_mm": 0.2,
           "regen_prozent": 22
         },
         {
@@ -5928,7 +5916,7 @@
         {
           "zeit": "23:00",
           "temp": 9.6,
-          "regen_mm": 1.0,
+          "regen_mm": 0.0,
           "regen_prozent": 41
         }
       ]
@@ -5941,45 +5929,45 @@
         {
           "datum": "2026-10-13",
           "tag": "today",
-          "max": 11.4,
-          "min": 6.5,
+          "max": 11.7,
+          "min": 7.4,
           "regen_prozent": 65,
-          "regen_mm": 3.6,
-          "wind_kmh": 4.7,
-          "boeen_kmh": 26.3,
-          "wind_ms_roh": 1.3,
-          "boeen_ms_roh": 7.3,
-          "sonne_std": 0.1,
+          "regen_mm": 1.1,
+          "wind_kmh": 5.4,
+          "boeen_kmh": 22.7,
+          "wind_ms_roh": 1.5,
+          "boeen_ms_roh": 6.3,
+          "sonne_std": 0,
           "symbol": "cloudy",
           "text": "bewoelkt"
         },
         {
           "datum": "2026-10-14",
           "tag": "tomorrow",
-          "max": 14.7,
-          "min": 8.7,
+          "max": 15.5,
+          "min": 9.3,
           "regen_prozent": 10,
           "regen_mm": 0,
           "wind_kmh": 5.8,
-          "boeen_kmh": 35.3,
+          "boeen_kmh": 27.0,
           "wind_ms_roh": 1.6,
-          "boeen_ms_roh": 9.8,
-          "sonne_std": 6.8,
+          "boeen_ms_roh": 7.5,
+          "sonne_std": 6.5,
           "symbol": "cloudy",
           "text": "bewoelkt"
         },
         {
           "datum": "2026-10-15",
           "tag": "thursday",
-          "max": 14.6,
-          "min": 7.2,
+          "max": 14.9,
+          "min": 7.6,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 3.2,
-          "boeen_kmh": 20.9,
-          "wind_ms_roh": 0.9,
-          "boeen_ms_roh": 5.8,
-          "sonne_std": 8.1,
+          "wind_kmh": 3.6,
+          "boeen_kmh": 15.5,
+          "wind_ms_roh": 1,
+          "boeen_ms_roh": 4.3,
+          "sonne_std": 7.6,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -5990,9 +5978,9 @@
           "max": 13.8,
           "min": 7.4,
           "regen_prozent": 53,
-          "regen_mm": 1.6,
-          "wind_kmh": 11.9,
-          "boeen_kmh": 56.2,
+          "regen_mm": 1.5,
+          "wind_kmh": 14.1,
+          "boeen_kmh": 59.0,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -6002,8 +5990,8 @@
           "min": 9.7,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 13.3,
-          "boeen_kmh": 45.7,
+          "wind_kmh": 11.2,
+          "boeen_kmh": 45.4,
           "sonne_std": 10.0,
           "text": "bedeckt"
         },
@@ -6095,13 +6083,13 @@
         {
           "zeit": "12:00",
           "temp": 8.8,
-          "regen_mm": 0.7,
+          "regen_mm": 0.0,
           "regen_prozent": 21
         },
         {
           "zeit": "13:00",
           "temp": 8.8,
-          "regen_mm": 0.4,
+          "regen_mm": 0.5,
           "regen_prozent": 35
         },
         {
@@ -6155,13 +6143,13 @@
         {
           "zeit": "22:00",
           "temp": 13.8,
-          "regen_mm": 0.2,
+          "regen_mm": 0.3,
           "regen_prozent": 44
         },
         {
           "zeit": "23:00",
           "temp": 13.7,
-          "regen_mm": 0.0,
+          "regen_mm": 0.4,
           "regen_prozent": 53
         }
       ]
@@ -6177,11 +6165,11 @@
           "max": 12,
           "min": 6.4,
           "regen_prozent": 59,
-          "regen_mm": 3.1,
-          "wind_kmh": 5.0,
-          "boeen_kmh": 18.7,
-          "wind_ms_roh": 1.4,
-          "boeen_ms_roh": 5.2,
+          "regen_mm": 0.8,
+          "wind_kmh": 6.1,
+          "boeen_kmh": 19.8,
+          "wind_ms_roh": 1.7,
+          "boeen_ms_roh": 5.5,
           "sonne_std": 0.1,
           "symbol": "cloudy",
           "text": "bewoelkt"
@@ -6189,30 +6177,30 @@
         {
           "datum": "2026-10-14",
           "tag": "tomorrow",
-          "max": 16,
+          "max": 16.7,
           "min": 9.2,
           "regen_prozent": 10,
           "regen_mm": 0,
-          "wind_kmh": 4.7,
+          "wind_kmh": 5.0,
           "boeen_kmh": 20.9,
-          "wind_ms_roh": 1.3,
+          "wind_ms_roh": 1.4,
           "boeen_ms_roh": 5.8,
-          "sonne_std": 7.8,
-          "symbol": "partlycloudy",
-          "text": "heiter"
+          "sonne_std": 6,
+          "symbol": "cloudy",
+          "text": "bewoelkt"
         },
         {
           "datum": "2026-10-15",
           "tag": "thursday",
-          "max": 15.5,
-          "min": 7.5,
+          "max": 15.4,
+          "min": 7.6,
           "regen_prozent": 0,
           "regen_mm": 0,
           "wind_kmh": 3.2,
-          "boeen_kmh": 23.0,
+          "boeen_kmh": 16.2,
           "wind_ms_roh": 0.9,
-          "boeen_ms_roh": 6.4,
-          "sonne_std": 7.8,
+          "boeen_ms_roh": 4.5,
+          "sonne_std": 7.5,
           "symbol": "partlycloudy",
           "text": "heiter"
         }
@@ -6223,9 +6211,9 @@
           "max": 11.1,
           "min": 8.1,
           "regen_prozent": 53,
-          "regen_mm": 1.4,
-          "wind_kmh": 8.4,
-          "boeen_kmh": 16.2,
+          "regen_mm": 1.6,
+          "wind_kmh": 8.9,
+          "boeen_kmh": 18.0,
           "sonne_std": 0.0,
           "text": "Regenschauer"
         },
@@ -6235,8 +6223,8 @@
           "min": 7.7,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 7.2,
-          "boeen_kmh": 19.8,
+          "wind_kmh": 6.8,
+          "boeen_kmh": 15.8,
           "sonne_std": 10.0,
           "text": "Nebel"
         },
@@ -6328,13 +6316,13 @@
         {
           "zeit": "12:00",
           "temp": 9.7,
-          "regen_mm": 0.6,
+          "regen_mm": 0.0,
           "regen_prozent": 21
         },
         {
           "zeit": "13:00",
           "temp": 9.4,
-          "regen_mm": 0.3,
+          "regen_mm": 0.6,
           "regen_prozent": 35
         },
         {
@@ -6394,7 +6382,7 @@
         {
           "zeit": "23:00",
           "temp": 10.7,
-          "regen_mm": 0.0,
+          "regen_mm": 0.5,
           "regen_prozent": 53
         }
       ]
@@ -6406,35 +6394,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 18.8,
+          "max": 18.7,
           "min": 14.7,
           "regen_prozent": 65,
-          "regen_mm": 0.2,
-          "wind_kmh": 37.1,
-          "boeen_kmh": 62.3,
-          "sonne_std": 0.2,
+          "regen_mm": 0.3,
+          "wind_kmh": 36.0,
+          "boeen_kmh": 60.8,
+          "sonne_std": 0.3,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
+          "max": 17.3,
           "min": 13.3,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 26.3,
-          "boeen_kmh": 45.7,
+          "wind_kmh": 23.4,
+          "boeen_kmh": 44.6,
           "sonne_std": 9.1,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.6,
-          "min": 12.4,
+          "max": 19.8,
+          "min": 12.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 17.3,
-          "boeen_kmh": 30.2,
-          "sonne_std": 8.2,
+          "wind_kmh": 18.7,
+          "boeen_kmh": 31.7,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -6501,19 +6489,19 @@
         },
         {
           "zeit": "10:00",
-          "temp": 15.9,
+          "temp": 15.8,
           "regen_mm": 0.0,
           "regen_prozent": 1
         },
         {
           "zeit": "11:00",
-          "temp": 16.1,
+          "temp": 16.3,
           "regen_mm": 0.0,
           "regen_prozent": 4
         },
         {
           "zeit": "12:00",
-          "temp": 16.4,
+          "temp": 16.3,
           "regen_mm": 0.0,
           "regen_prozent": 14
         },
@@ -6525,61 +6513,61 @@
         },
         {
           "zeit": "14:00",
-          "temp": 17.7,
+          "temp": 17.3,
           "regen_mm": 0.0,
           "regen_prozent": 41
         },
         {
           "zeit": "15:00",
-          "temp": 18.6,
+          "temp": 18.0,
           "regen_mm": 0.0,
           "regen_prozent": 53
         },
         {
           "zeit": "16:00",
-          "temp": 18.8,
+          "temp": 18.7,
           "regen_mm": 0.0,
           "regen_prozent": 64
         },
         {
           "zeit": "17:00",
-          "temp": 18.2,
-          "regen_mm": 0.0,
+          "temp": 18.0,
+          "regen_mm": 0.1,
           "regen_prozent": 65
         },
         {
           "zeit": "18:00",
-          "temp": 18.2,
+          "temp": 18.1,
           "regen_mm": 0.0,
           "regen_prozent": 48
         },
         {
           "zeit": "19:00",
-          "temp": 17.6,
+          "temp": 17.5,
           "regen_mm": 0.0,
           "regen_prozent": 20
         },
         {
           "zeit": "20:00",
-          "temp": 17.2,
+          "temp": 17.1,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "21:00",
-          "temp": 16.9,
+          "temp": 16.8,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "22:00",
-          "temp": 16.6,
+          "temp": 16.5,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "23:00",
-          "temp": 16.3,
+          "temp": 16.6,
           "regen_mm": 0.0,
           "regen_prozent": 0
         }
@@ -6587,35 +6575,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 18.8,
+          "max": 18.7,
           "min": 14.7,
           "regen_prozent": 65,
-          "regen_mm": 0.2,
-          "wind_kmh": 37.1,
-          "boeen_kmh": 62.3,
-          "sonne_std": 0.2,
+          "regen_mm": 0.3,
+          "wind_kmh": 36.0,
+          "boeen_kmh": 60.8,
+          "sonne_std": 0.3,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
+          "max": 17.3,
           "min": 13.3,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 26.3,
-          "boeen_kmh": 45.7,
+          "wind_kmh": 23.4,
+          "boeen_kmh": 44.6,
           "sonne_std": 9.1,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.6,
-          "min": 12.4,
+          "max": 19.8,
+          "min": 12.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 17.3,
-          "boeen_kmh": 30.2,
-          "sonne_std": 8.2,
+          "wind_kmh": 18.7,
+          "boeen_kmh": 31.7,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -6628,35 +6616,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.3,
+          "max": 18.8,
           "min": 14.5,
           "regen_prozent": 57,
-          "regen_mm": 0.1,
-          "wind_kmh": 33.8,
-          "boeen_kmh": 61.2,
-          "sonne_std": 1.2,
+          "regen_mm": 0.4,
+          "wind_kmh": 32.0,
+          "boeen_kmh": 58.7,
+          "sonne_std": 1.4,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.3,
-          "min": 10.9,
+          "max": 17.1,
+          "min": 11.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 21.6,
-          "boeen_kmh": 46.8,
+          "wind_kmh": 23.8,
+          "boeen_kmh": 42.8,
           "sonne_std": 9.2,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.4,
-          "min": 11.3,
+          "max": 20.0,
+          "min": 11.4,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 19.7,
-          "boeen_kmh": 34.9,
-          "sonne_std": 8.8,
+          "wind_kmh": 19.5,
+          "boeen_kmh": 34.2,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -6723,14 +6711,14 @@
         },
         {
           "zeit": "10:00",
-          "temp": 15.7,
+          "temp": 15.8,
           "regen_mm": 0.0,
           "regen_prozent": 4
         },
         {
           "zeit": "11:00",
           "temp": 16.2,
-          "regen_mm": 0.0,
+          "regen_mm": 0.1,
           "regen_prozent": 8
         },
         {
@@ -6742,42 +6730,42 @@
         {
           "zeit": "13:00",
           "temp": 16.9,
-          "regen_mm": 0.0,
+          "regen_mm": 0.1,
           "regen_prozent": 29
         },
         {
           "zeit": "14:00",
-          "temp": 18.6,
+          "temp": 18.2,
           "regen_mm": 0.0,
           "regen_prozent": 39
         },
         {
           "zeit": "15:00",
-          "temp": 19.3,
+          "temp": 18.8,
           "regen_mm": 0.0,
           "regen_prozent": 49
         },
         {
           "zeit": "16:00",
-          "temp": 18.4,
+          "temp": 18.1,
           "regen_mm": 0.0,
           "regen_prozent": 57
         },
         {
           "zeit": "17:00",
           "temp": 18.0,
-          "regen_mm": 0.0,
+          "regen_mm": 0.1,
           "regen_prozent": 57
         },
         {
           "zeit": "18:00",
-          "temp": 18.1,
+          "temp": 17.9,
           "regen_mm": 0.0,
           "regen_prozent": 41
         },
         {
           "zeit": "19:00",
-          "temp": 17.4,
+          "temp": 16.8,
           "regen_mm": 0.0,
           "regen_prozent": 18
         },
@@ -6789,13 +6777,13 @@
         },
         {
           "zeit": "21:00",
-          "temp": 16.4,
+          "temp": 16.3,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "22:00",
-          "temp": 15.6,
+          "temp": 16.1,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
@@ -6809,35 +6797,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.3,
+          "max": 18.8,
           "min": 14.5,
           "regen_prozent": 57,
-          "regen_mm": 0.1,
-          "wind_kmh": 33.8,
-          "boeen_kmh": 61.2,
-          "sonne_std": 1.2,
+          "regen_mm": 0.4,
+          "wind_kmh": 32.0,
+          "boeen_kmh": 58.7,
+          "sonne_std": 1.4,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.3,
-          "min": 10.9,
+          "max": 17.1,
+          "min": 11.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 21.6,
-          "boeen_kmh": 46.8,
+          "wind_kmh": 23.8,
+          "boeen_kmh": 42.8,
           "sonne_std": 9.2,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.4,
-          "min": 11.3,
+          "max": 20.0,
+          "min": 11.4,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 19.7,
-          "boeen_kmh": 34.9,
-          "sonne_std": 8.8,
+          "wind_kmh": 19.5,
+          "boeen_kmh": 34.2,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -6850,35 +6838,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.2,
+          "max": 18.5,
           "min": 13.4,
           "regen_prozent": 65,
-          "regen_mm": 0.1,
-          "wind_kmh": 31.3,
-          "boeen_kmh": 58.0,
-          "sonne_std": 0.3,
+          "regen_mm": 0.3,
+          "wind_kmh": 31.7,
+          "boeen_kmh": 59.8,
+          "sonne_std": 0.2,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.5,
+          "max": 17.1,
           "min": 9.1,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.7,
-          "boeen_kmh": 32.0,
-          "sonne_std": 9.2,
+          "wind_kmh": 15.8,
+          "boeen_kmh": 29.5,
+          "sonne_std": 8.9,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.7,
-          "min": 10.5,
+          "max": 19.8,
+          "min": 10.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 16.6,
+          "wind_kmh": 15.9,
           "boeen_kmh": 28.8,
-          "sonne_std": 8.0,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -6945,7 +6933,7 @@
         },
         {
           "zeit": "10:00",
-          "temp": 15.5,
+          "temp": 15.3,
           "regen_mm": 0.0,
           "regen_prozent": 1
         },
@@ -6963,55 +6951,55 @@
         },
         {
           "zeit": "13:00",
-          "temp": 16.5,
-          "regen_mm": 0.0,
+          "temp": 16.4,
+          "regen_mm": 0.1,
           "regen_prozent": 28
         },
         {
           "zeit": "14:00",
-          "temp": 17.9,
+          "temp": 17.3,
           "regen_mm": 0.0,
           "regen_prozent": 41
         },
         {
           "zeit": "15:00",
-          "temp": 18.4,
+          "temp": 17.9,
           "regen_mm": 0.0,
           "regen_prozent": 53
         },
         {
           "zeit": "16:00",
-          "temp": 19.2,
+          "temp": 18.5,
           "regen_mm": 0.0,
           "regen_prozent": 64
         },
         {
           "zeit": "17:00",
-          "temp": 18.3,
-          "regen_mm": 0.0,
+          "temp": 18.0,
+          "regen_mm": 0.1,
           "regen_prozent": 65
         },
         {
           "zeit": "18:00",
-          "temp": 18.2,
+          "temp": 18.0,
           "regen_mm": 0.0,
           "regen_prozent": 48
         },
         {
           "zeit": "19:00",
-          "temp": 17.3,
+          "temp": 16.9,
           "regen_mm": 0.0,
           "regen_prozent": 20
         },
         {
           "zeit": "20:00",
-          "temp": 16.2,
+          "temp": 15.9,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "21:00",
-          "temp": 15.4,
+          "temp": 14.9,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
@@ -7023,7 +7011,7 @@
         },
         {
           "zeit": "23:00",
-          "temp": 14.0,
+          "temp": 14.7,
           "regen_mm": 0.0,
           "regen_prozent": 0
         }
@@ -7031,35 +7019,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.2,
+          "max": 18.5,
           "min": 13.4,
           "regen_prozent": 65,
-          "regen_mm": 0.1,
-          "wind_kmh": 31.3,
-          "boeen_kmh": 58.0,
-          "sonne_std": 0.3,
+          "regen_mm": 0.3,
+          "wind_kmh": 31.7,
+          "boeen_kmh": 59.8,
+          "sonne_std": 0.2,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.5,
+          "max": 17.1,
           "min": 9.1,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.7,
-          "boeen_kmh": 32.0,
-          "sonne_std": 9.2,
+          "wind_kmh": 15.8,
+          "boeen_kmh": 29.5,
+          "sonne_std": 8.9,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.7,
-          "min": 10.5,
+          "max": 19.8,
+          "min": 10.6,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 16.6,
+          "wind_kmh": 15.9,
           "boeen_kmh": 28.8,
-          "sonne_std": 8.0,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -7074,13 +7062,13 @@
           "datum": "2026-10-14",
           "tag": "tomorrow",
           "max": 16,
-          "min": 12.7,
+          "min": 12.3,
           "regen_prozent": 1,
           "regen_mm": 0,
-          "wind_kmh": 14.4,
-          "boeen_kmh": 40.0,
-          "wind_ms_roh": 4,
-          "boeen_ms_roh": 11.1,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 40.7,
+          "wind_ms_roh": 4.1,
+          "boeen_ms_roh": 11.3,
           "sonne_std": null,
           "symbol": "partlycloudy",
           "text": "heiter"
@@ -7089,14 +7077,14 @@
           "datum": "2026-10-15",
           "tag": "thursday",
           "max": 19.5,
-          "min": 11.5,
+          "min": 11,
           "regen_prozent": 0,
           "regen_mm": 0,
-          "wind_kmh": 18.7,
+          "wind_kmh": 19.4,
           "boeen_kmh": 35.6,
-          "wind_ms_roh": 5.2,
+          "wind_ms_roh": 5.4,
           "boeen_ms_roh": 9.9,
-          "sonne_std": 4.1,
+          "sonne_std": 2.4,
           "symbol": "cloudy",
           "text": "bewoelkt"
         },
@@ -7119,35 +7107,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 18.9,
+          "max": 18.3,
           "min": 14.1,
           "regen_prozent": 65,
-          "regen_mm": 0.2,
-          "wind_kmh": 34.6,
-          "boeen_kmh": 62.6,
-          "sonne_std": 0.5,
+          "regen_mm": 0.3,
+          "wind_kmh": 33.8,
+          "boeen_kmh": 59.4,
+          "sonne_std": 1.2,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.3,
+          "max": 16.7,
           "min": 11.3,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 23.4,
-          "boeen_kmh": 42.1,
+          "wind_kmh": 24.1,
+          "boeen_kmh": 41.8,
           "sonne_std": 9.2,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.3,
+          "max": 19.4,
           "min": 11.7,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 16.7,
-          "boeen_kmh": 30.2,
-          "sonne_std": 8.3,
+          "wind_kmh": 16.9,
+          "boeen_kmh": 29.5,
+          "sonne_std": 8.6,
           "text": "bedeckt"
         }
       ],
@@ -7226,7 +7214,7 @@
         },
         {
           "zeit": "12:00",
-          "temp": 16.3,
+          "temp": 16.1,
           "regen_mm": 0.0,
           "regen_prozent": 14
         },
@@ -7238,61 +7226,61 @@
         },
         {
           "zeit": "14:00",
-          "temp": 17.6,
+          "temp": 17.0,
           "regen_mm": 0.0,
           "regen_prozent": 41
         },
         {
           "zeit": "15:00",
-          "temp": 18.9,
+          "temp": 18.2,
           "regen_mm": 0.0,
           "regen_prozent": 53
         },
         {
           "zeit": "16:00",
-          "temp": 18.6,
+          "temp": 18.3,
           "regen_mm": 0.0,
           "regen_prozent": 64
         },
         {
           "zeit": "17:00",
-          "temp": 18.1,
-          "regen_mm": 0.0,
+          "temp": 17.8,
+          "regen_mm": 0.1,
           "regen_prozent": 65
         },
         {
           "zeit": "18:00",
-          "temp": 18.1,
+          "temp": 17.8,
           "regen_mm": 0.0,
           "regen_prozent": 48
         },
         {
           "zeit": "19:00",
-          "temp": 17.2,
+          "temp": 16.9,
           "regen_mm": 0.0,
           "regen_prozent": 20
         },
         {
           "zeit": "20:00",
-          "temp": 16.5,
+          "temp": 16.2,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "21:00",
-          "temp": 16.1,
+          "temp": 16.0,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "22:00",
-          "temp": 15.7,
+          "temp": 15.6,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "23:00",
-          "temp": 15.4,
+          "temp": 15.9,
           "regen_mm": 0.0,
           "regen_prozent": 0
         }
@@ -7305,35 +7293,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.5,
+          "max": 18.4,
           "min": 14.8,
           "regen_prozent": 84,
-          "regen_mm": 0.0,
-          "wind_kmh": 34.9,
-          "boeen_kmh": 60.5,
-          "sonne_std": 1.4,
-          "text": "bedeckt"
+          "regen_mm": 0.2,
+          "wind_kmh": 33.8,
+          "boeen_kmh": 60.8,
+          "sonne_std": 0.6,
+          "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
+          "max": 17.4,
           "min": 12.1,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.4,
-          "boeen_kmh": 45.4,
-          "sonne_std": 9.2,
+          "wind_kmh": 22.7,
+          "boeen_kmh": 42.5,
+          "sonne_std": 9.3,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.8,
-          "min": 11.5,
+          "max": 20.3,
+          "min": 11.7,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.9,
-          "boeen_kmh": 32.8,
-          "sonne_std": 8.5,
+          "wind_kmh": 19.8,
+          "boeen_kmh": 35.6,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -7418,67 +7406,67 @@
         },
         {
           "zeit": "13:00",
-          "temp": 16.7,
-          "regen_mm": 0.0,
+          "temp": 16.5,
+          "regen_mm": 0.1,
           "regen_prozent": 12
         },
         {
           "zeit": "14:00",
-          "temp": 18.2,
+          "temp": 17.3,
           "regen_mm": 0.0,
           "regen_prozent": 24
         },
         {
           "zeit": "15:00",
-          "temp": 19.5,
+          "temp": 18.4,
           "regen_mm": 0.0,
           "regen_prozent": 47
         },
         {
           "zeit": "16:00",
-          "temp": 18.8,
+          "temp": 18.4,
           "regen_mm": 0.0,
           "regen_prozent": 73
         },
         {
           "zeit": "17:00",
-          "temp": 18.0,
-          "regen_mm": 0.0,
+          "temp": 17.7,
+          "regen_mm": 0.1,
           "regen_prozent": 84
         },
         {
           "zeit": "18:00",
-          "temp": 17.8,
+          "temp": 17.6,
           "regen_mm": 0.0,
           "regen_prozent": 64
         },
         {
           "zeit": "19:00",
-          "temp": 17.6,
+          "temp": 17.0,
           "regen_mm": 0.0,
           "regen_prozent": 27
         },
         {
           "zeit": "20:00",
-          "temp": 16.8,
-          "regen_mm": 0.0,
-          "regen_prozent": 0
-        },
-        {
-          "zeit": "21:00",
           "temp": 16.5,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
+          "zeit": "21:00",
+          "temp": 16.4,
+          "regen_mm": 0.0,
+          "regen_prozent": 0
+        },
+        {
           "zeit": "22:00",
-          "temp": 16.3,
+          "temp": 16.5,
           "regen_mm": 0.0,
           "regen_prozent": 0
         },
         {
           "zeit": "23:00",
-          "temp": 16.6,
+          "temp": 16.3,
           "regen_mm": 0.0,
           "regen_prozent": 0
         }
@@ -7486,35 +7474,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 19.5,
+          "max": 18.4,
           "min": 14.8,
           "regen_prozent": 84,
-          "regen_mm": 0.0,
-          "wind_kmh": 34.9,
-          "boeen_kmh": 60.5,
-          "sonne_std": 1.4,
-          "text": "bedeckt"
+          "regen_mm": 0.2,
+          "wind_kmh": 33.8,
+          "boeen_kmh": 60.8,
+          "sonne_std": 0.6,
+          "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 17.6,
+          "max": 17.4,
           "min": 12.1,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.4,
-          "boeen_kmh": 45.4,
-          "sonne_std": 9.2,
+          "wind_kmh": 22.7,
+          "boeen_kmh": 42.5,
+          "sonne_std": 9.3,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 19.8,
-          "min": 11.5,
+          "max": 20.3,
+          "min": 11.7,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 18.9,
-          "boeen_kmh": 32.8,
-          "sonne_std": 8.5,
+          "wind_kmh": 19.8,
+          "boeen_kmh": 35.6,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         }
       ],
@@ -7530,9 +7518,9 @@
           "max": 15.3,
           "min": 3.4,
           "regen_prozent": 18,
-          "regen_mm": 0.4,
-          "wind_kmh": 12.8,
-          "boeen_kmh": 29.2,
+          "regen_mm": 0.3,
+          "wind_kmh": 12.9,
+          "boeen_kmh": 29.9,
           "sonne_std": 8.0,
           "text": "leichter Regen"
         },
@@ -7541,9 +7529,9 @@
           "max": 15.9,
           "min": 10.1,
           "regen_prozent": 94,
-          "regen_mm": 2.5,
-          "wind_kmh": 18.2,
-          "boeen_kmh": 43.9,
+          "regen_mm": 2.2,
+          "wind_kmh": 17.4,
+          "boeen_kmh": 42.5,
           "sonne_std": 9.0,
           "text": "leichter Regen"
         },
@@ -7677,7 +7665,7 @@
         {
           "zeit": "19:00",
           "temp": 13.6,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 11
         },
         {
@@ -7711,9 +7699,9 @@
           "max": 15.3,
           "min": 3.4,
           "regen_prozent": 18,
-          "regen_mm": 0.4,
-          "wind_kmh": 12.8,
-          "boeen_kmh": 29.2,
+          "regen_mm": 0.3,
+          "wind_kmh": 12.9,
+          "boeen_kmh": 29.9,
           "sonne_std": 8.0,
           "text": "leichter Regen"
         },
@@ -7722,9 +7710,9 @@
           "max": 15.9,
           "min": 10.1,
           "regen_prozent": 94,
-          "regen_mm": 2.5,
-          "wind_kmh": 18.2,
-          "boeen_kmh": 43.9,
+          "regen_mm": 2.2,
+          "wind_kmh": 17.4,
+          "boeen_kmh": 42.5,
           "sonne_std": 9.0,
           "text": "leichter Regen"
         },
@@ -7752,9 +7740,9 @@
           "max": 12.8,
           "min": 1.0,
           "regen_prozent": 82,
-          "regen_mm": 4.4,
-          "wind_kmh": 12.3,
-          "boeen_kmh": 23.0,
+          "regen_mm": 3.6,
+          "wind_kmh": 12.0,
+          "boeen_kmh": 23.8,
           "sonne_std": 5.7,
           "text": "leichter Regen"
         },
@@ -7763,9 +7751,9 @@
           "max": 13.5,
           "min": 8.8,
           "regen_prozent": 95,
-          "regen_mm": 3.4,
-          "wind_kmh": 13.9,
-          "boeen_kmh": 29.2,
+          "regen_mm": 6.4,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 31.3,
           "sonne_std": 0.3,
           "text": "Regenschauer"
         },
@@ -7887,43 +7875,43 @@
         {
           "zeit": "17:00",
           "temp": 11.2,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 14
         },
         {
           "zeit": "18:00",
           "temp": 10.1,
-          "regen_mm": 0.2,
+          "regen_mm": 0.5,
           "regen_prozent": 22
         },
         {
           "zeit": "19:00",
           "temp": 9.7,
-          "regen_mm": 1.0,
+          "regen_mm": 0.9,
           "regen_prozent": 32
         },
         {
           "zeit": "20:00",
           "temp": 9.4,
-          "regen_mm": 1.2,
+          "regen_mm": 1.1,
           "regen_prozent": 43
         },
         {
           "zeit": "21:00",
           "temp": 9.5,
-          "regen_mm": 0.4,
+          "regen_mm": 0.1,
           "regen_prozent": 56
         },
         {
           "zeit": "22:00",
           "temp": 9.8,
-          "regen_mm": 0.1,
+          "regen_mm": 0.5,
           "regen_prozent": 71
         },
         {
           "zeit": "23:00",
           "temp": 9.7,
-          "regen_mm": 1.4,
+          "regen_mm": 0.5,
           "regen_prozent": 82
         }
       ],
@@ -7933,9 +7921,9 @@
           "max": 12.8,
           "min": 1.0,
           "regen_prozent": 82,
-          "regen_mm": 4.4,
-          "wind_kmh": 12.3,
-          "boeen_kmh": 23.0,
+          "regen_mm": 3.6,
+          "wind_kmh": 12.0,
+          "boeen_kmh": 23.8,
           "sonne_std": 5.7,
           "text": "leichter Regen"
         },
@@ -7944,9 +7932,9 @@
           "max": 13.5,
           "min": 8.8,
           "regen_prozent": 95,
-          "regen_mm": 3.4,
-          "wind_kmh": 13.9,
-          "boeen_kmh": 29.2,
+          "regen_mm": 6.4,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 31.3,
           "sonne_std": 0.3,
           "text": "Regenschauer"
         },
@@ -7974,9 +7962,9 @@
           "max": 13.8,
           "min": 2.5,
           "regen_prozent": 75,
-          "regen_mm": 5.5,
+          "regen_mm": 3.3,
           "wind_kmh": 8.5,
-          "boeen_kmh": 19.1,
+          "boeen_kmh": 20.2,
           "sonne_std": 5.0,
           "text": "leichter Regen"
         },
@@ -7985,8 +7973,8 @@
           "max": 16.7,
           "min": 10.6,
           "regen_prozent": 92,
-          "regen_mm": 0.3,
-          "wind_kmh": 11.2,
+          "regen_mm": 1.2,
+          "wind_kmh": 11.6,
           "boeen_kmh": 25.9,
           "sonne_std": 6.7,
           "text": "Regenschauer"
@@ -7997,7 +7985,7 @@
           "min": 8.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 4.3,
+          "wind_kmh": 5.4,
           "boeen_kmh": 13.3,
           "sonne_std": 7.7,
           "text": "Nebel"
@@ -8109,31 +8097,31 @@
         {
           "zeit": "17:00",
           "temp": 12.9,
-          "regen_mm": 0.1,
+          "regen_mm": 0.0,
           "regen_prozent": 8
         },
         {
           "zeit": "18:00",
           "temp": 12.0,
-          "regen_mm": 0.5,
+          "regen_mm": 0.7,
           "regen_prozent": 22
         },
         {
           "zeit": "19:00",
           "temp": 11.4,
-          "regen_mm": 1.2,
+          "regen_mm": 1.1,
           "regen_prozent": 40
         },
         {
           "zeit": "20:00",
           "temp": 11.1,
-          "regen_mm": 2.5,
+          "regen_mm": 0.9,
           "regen_prozent": 55
         },
         {
           "zeit": "21:00",
           "temp": 11.2,
-          "regen_mm": 0.5,
+          "regen_mm": 0.0,
           "regen_prozent": 65
         },
         {
@@ -8145,7 +8133,7 @@
         {
           "zeit": "23:00",
           "temp": 11.6,
-          "regen_mm": 0.5,
+          "regen_mm": 0.4,
           "regen_prozent": 75
         }
       ],
@@ -8155,9 +8143,9 @@
           "max": 13.8,
           "min": 2.5,
           "regen_prozent": 75,
-          "regen_mm": 5.5,
+          "regen_mm": 3.3,
           "wind_kmh": 8.5,
-          "boeen_kmh": 19.1,
+          "boeen_kmh": 20.2,
           "sonne_std": 5.0,
           "text": "leichter Regen"
         },
@@ -8166,8 +8154,8 @@
           "max": 16.7,
           "min": 10.6,
           "regen_prozent": 92,
-          "regen_mm": 0.3,
-          "wind_kmh": 11.2,
+          "regen_mm": 1.2,
+          "wind_kmh": 11.6,
           "boeen_kmh": 25.9,
           "sonne_std": 6.7,
           "text": "Regenschauer"
@@ -8178,7 +8166,7 @@
           "min": 8.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 4.3,
+          "wind_kmh": 5.4,
           "boeen_kmh": 13.3,
           "sonne_std": 7.7,
           "text": "Nebel"
@@ -8196,9 +8184,9 @@
           "max": 14.3,
           "min": 5.4,
           "regen_prozent": 100,
-          "regen_mm": 1.9,
-          "wind_kmh": 14.8,
-          "boeen_kmh": 34.6,
+          "regen_mm": 2.8,
+          "wind_kmh": 14.6,
+          "boeen_kmh": 33.8,
           "sonne_std": 1.4,
           "text": "Regenschauer"
         },
@@ -8207,9 +8195,9 @@
           "max": 15.8,
           "min": 10.1,
           "regen_prozent": 72,
-          "regen_mm": 0.1,
-          "wind_kmh": 14.3,
-          "boeen_kmh": 32.4,
+          "regen_mm": 0.0,
+          "wind_kmh": 14.5,
+          "boeen_kmh": 32.8,
           "sonne_std": 9.0,
           "text": "bedeckt"
         },
@@ -8355,7 +8343,7 @@
         {
           "zeit": "21:00",
           "temp": 13.7,
-          "regen_mm": 1.9,
+          "regen_mm": 2.8,
           "regen_prozent": 90
         },
         {
@@ -8377,9 +8365,9 @@
           "max": 14.3,
           "min": 5.4,
           "regen_prozent": 100,
-          "regen_mm": 1.9,
-          "wind_kmh": 14.8,
-          "boeen_kmh": 34.6,
+          "regen_mm": 2.8,
+          "wind_kmh": 14.6,
+          "boeen_kmh": 33.8,
           "sonne_std": 1.4,
           "text": "Regenschauer"
         },
@@ -8388,9 +8376,9 @@
           "max": 15.8,
           "min": 10.1,
           "regen_prozent": 72,
-          "regen_mm": 0.1,
-          "wind_kmh": 14.3,
-          "boeen_kmh": 32.4,
+          "regen_mm": 0.0,
+          "wind_kmh": 14.5,
+          "boeen_kmh": 32.8,
           "sonne_std": 9.0,
           "text": "bedeckt"
         },
@@ -8415,35 +8403,35 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 15.0,
+          "max": 14.3,
           "min": 6.9,
           "regen_prozent": 100,
-          "regen_mm": 1.5,
-          "wind_kmh": 22.0,
-          "boeen_kmh": 38.5,
+          "regen_mm": 0.7,
+          "wind_kmh": 20.9,
+          "boeen_kmh": 36.7,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 15.7,
-          "min": 8.1,
+          "max": 15.8,
+          "min": 8.2,
           "regen_prozent": 2,
           "regen_mm": 0.0,
-          "wind_kmh": 15.8,
-          "boeen_kmh": 28.4,
-          "sonne_std": 9.2,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 27.7,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
           "max": 18.2,
-          "min": 8.9,
+          "min": 8.7,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 19.4,
-          "boeen_kmh": 34.2,
-          "sonne_std": 9.9,
+          "wind_kmh": 17.3,
+          "boeen_kmh": 30.6,
+          "sonne_std": 9.7,
           "text": "bedeckt"
         }
       ],
@@ -8510,79 +8498,79 @@
         },
         {
           "zeit": "10:00",
-          "temp": 11.1,
+          "temp": 11.0,
           "regen_mm": 0.0,
           "regen_prozent": 37
         },
         {
           "zeit": "11:00",
-          "temp": 11.2,
-          "regen_mm": 0.1,
+          "temp": 11.0,
+          "regen_mm": 0.0,
           "regen_prozent": 39
         },
         {
           "zeit": "12:00",
-          "temp": 11.4,
-          "regen_mm": 0.1,
+          "temp": 11.2,
+          "regen_mm": 0.0,
           "regen_prozent": 36
         },
         {
           "zeit": "13:00",
-          "temp": 12.5,
+          "temp": 12.1,
           "regen_mm": 0.0,
           "regen_prozent": 31
         },
         {
           "zeit": "14:00",
-          "temp": 12.6,
+          "temp": 12.4,
           "regen_mm": 0.0,
           "regen_prozent": 27
         },
         {
           "zeit": "15:00",
-          "temp": 13.0,
-          "regen_mm": 0.1,
+          "temp": 12.7,
+          "regen_mm": 0.0,
           "regen_prozent": 23
         },
         {
           "zeit": "16:00",
-          "temp": 13.0,
+          "temp": 12.7,
           "regen_mm": 0.1,
           "regen_prozent": 21
         },
         {
           "zeit": "17:00",
-          "temp": 13.7,
+          "temp": 13.8,
           "regen_mm": 0.0,
           "regen_prozent": 27
         },
         {
           "zeit": "18:00",
-          "temp": 13.7,
+          "temp": 14.0,
           "regen_mm": 0.0,
           "regen_prozent": 52
         },
         {
           "zeit": "19:00",
-          "temp": 13.9,
-          "regen_mm": 0.0,
+          "temp": 14.0,
+          "regen_mm": 0.1,
           "regen_prozent": 85
         },
         {
           "zeit": "20:00",
-          "temp": 14.3,
-          "regen_mm": 0.4,
+          "temp": 14.2,
+          "regen_mm": 0.1,
           "regen_prozent": 100
         },
         {
           "zeit": "21:00",
-          "temp": 14.6,
-          "regen_mm": 0.4,
+          "temp": 14.3,
+          "regen_mm": 0.1,
           "regen_prozent": 80
         },
         {
           "zeit": "22:00",
-          "temp": 15.0,
+          "temp": 14.2,
           "regen_mm": 0.0,
           "regen_prozent": 42
         },
@@ -8596,35 +8584,35 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 15.0,
+          "max": 14.3,
           "min": 6.9,
           "regen_prozent": 100,
-          "regen_mm": 1.5,
-          "wind_kmh": 22.0,
-          "boeen_kmh": 38.5,
+          "regen_mm": 0.7,
+          "wind_kmh": 20.9,
+          "boeen_kmh": 36.7,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 15.7,
-          "min": 8.1,
+          "max": 15.8,
+          "min": 8.2,
           "regen_prozent": 2,
           "regen_mm": 0.0,
-          "wind_kmh": 15.8,
-          "boeen_kmh": 28.4,
-          "sonne_std": 9.2,
+          "wind_kmh": 14.8,
+          "boeen_kmh": 27.7,
+          "sonne_std": 9.0,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
           "max": 18.2,
-          "min": 8.9,
+          "min": 8.7,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 19.4,
-          "boeen_kmh": 34.2,
-          "sonne_std": 9.9,
+          "wind_kmh": 17.3,
+          "boeen_kmh": 30.6,
+          "sonne_std": 9.7,
           "text": "bedeckt"
         }
       ],
@@ -11749,8 +11737,8 @@
           "min": 6.3,
           "regen_prozent": 100,
           "regen_mm": 4.9,
-          "wind_kmh": 17.9,
-          "boeen_kmh": 37.8,
+          "wind_kmh": 18.0,
+          "boeen_kmh": 36.7,
           "sonne_std": 4.1,
           "text": "Regenschauer"
         },
@@ -11760,8 +11748,8 @@
           "min": 9.1,
           "regen_prozent": 71,
           "regen_mm": 0.0,
-          "wind_kmh": 17.8,
-          "boeen_kmh": 40.3,
+          "wind_kmh": 17.5,
+          "boeen_kmh": 36.7,
           "sonne_std": 10.0,
           "text": "bedeckt"
         },
@@ -11930,8 +11918,8 @@
           "min": 6.3,
           "regen_prozent": 100,
           "regen_mm": 4.9,
-          "wind_kmh": 17.9,
-          "boeen_kmh": 37.8,
+          "wind_kmh": 18.0,
+          "boeen_kmh": 36.7,
           "sonne_std": 4.1,
           "text": "Regenschauer"
         },
@@ -11941,8 +11929,8 @@
           "min": 9.1,
           "regen_prozent": 71,
           "regen_mm": 0.0,
-          "wind_kmh": 17.8,
-          "boeen_kmh": 40.3,
+          "wind_kmh": 17.5,
+          "boeen_kmh": 36.7,
           "sonne_std": 10.0,
           "text": "bedeckt"
         },
@@ -11971,7 +11959,7 @@
           "min": 0.5,
           "regen_prozent": 80,
           "regen_mm": 3.0,
-          "wind_kmh": 5.9,
+          "wind_kmh": 5.1,
           "boeen_kmh": 10.4,
           "sonne_std": 5.4,
           "text": "leichter Regen"
@@ -11982,7 +11970,7 @@
           "min": 10.4,
           "regen_prozent": 83,
           "regen_mm": 1.8,
-          "wind_kmh": 13.6,
+          "wind_kmh": 14.3,
           "boeen_kmh": 22.7,
           "sonne_std": 1.8,
           "text": "Regenschauer"
@@ -12152,7 +12140,7 @@
           "min": 0.5,
           "regen_prozent": 80,
           "regen_mm": 3.0,
-          "wind_kmh": 5.9,
+          "wind_kmh": 5.1,
           "boeen_kmh": 10.4,
           "sonne_std": 5.4,
           "text": "leichter Regen"
@@ -12163,7 +12151,7 @@
           "min": 10.4,
           "regen_prozent": 83,
           "regen_mm": 1.8,
-          "wind_kmh": 13.6,
+          "wind_kmh": 14.3,
           "boeen_kmh": 22.7,
           "sonne_std": 1.8,
           "text": "Regenschauer"
@@ -12193,7 +12181,7 @@
           "min": 7.2,
           "regen_prozent": 53,
           "regen_mm": 0.7,
-          "wind_kmh": 15.6,
+          "wind_kmh": 15.8,
           "boeen_kmh": 28.8,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -12204,7 +12192,7 @@
           "min": 8.5,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 14.9,
+          "wind_kmh": 13.6,
           "boeen_kmh": 25.2,
           "sonne_std": 10.0,
           "text": "bedeckt"
@@ -12374,7 +12362,7 @@
           "min": 7.2,
           "regen_prozent": 53,
           "regen_mm": 0.7,
-          "wind_kmh": 15.6,
+          "wind_kmh": 15.8,
           "boeen_kmh": 28.8,
           "sonne_std": 0.0,
           "text": "leichter Regen"
@@ -12385,7 +12373,7 @@
           "min": 8.5,
           "regen_prozent": 44,
           "regen_mm": 0.0,
-          "wind_kmh": 14.9,
+          "wind_kmh": 13.6,
           "boeen_kmh": 25.2,
           "sonne_std": 10.0,
           "text": "bedeckt"
@@ -12411,34 +12399,34 @@
       "om_tage": [
         {
           "datum": "2026-10-13",
-          "max": 14.1,
+          "max": 14.5,
           "min": 10.1,
           "regen_prozent": 98,
-          "regen_mm": 2.1,
-          "wind_kmh": 14.8,
-          "boeen_kmh": 29.2,
+          "regen_mm": 1.8,
+          "wind_kmh": 14.4,
+          "boeen_kmh": 28.4,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 16.7,
-          "min": 8.2,
+          "max": 16.6,
+          "min": 8.4,
           "regen_prozent": 26,
           "regen_mm": 0.0,
           "wind_kmh": 9.7,
-          "boeen_kmh": 19.8,
+          "boeen_kmh": 22.7,
           "sonne_std": 10.0,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 18.8,
-          "min": 8.2,
+          "max": 18.7,
+          "min": 8.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 11.9,
-          "boeen_kmh": 22.3,
+          "boeen_kmh": 22.0,
           "sonne_std": 10.0,
           "text": "bedeckt"
         }
@@ -12506,85 +12494,85 @@
         },
         {
           "zeit": "10:00",
-          "temp": 10.4,
+          "temp": 11.4,
           "regen_mm": 0.4,
           "regen_prozent": 59
         },
         {
           "zeit": "11:00",
-          "temp": 10.9,
+          "temp": 11.0,
           "regen_mm": 0.0,
           "regen_prozent": 61
         },
         {
           "zeit": "12:00",
-          "temp": 10.8,
-          "regen_mm": 0.2,
+          "temp": 10.9,
+          "regen_mm": 0.0,
           "regen_prozent": 55
         },
         {
           "zeit": "13:00",
-          "temp": 11.2,
+          "temp": 11.1,
           "regen_mm": 0.0,
           "regen_prozent": 44
         },
         {
           "zeit": "14:00",
-          "temp": 11.9,
+          "temp": 11.7,
           "regen_mm": 0.0,
           "regen_prozent": 35
         },
         {
           "zeit": "15:00",
-          "temp": 12.1,
+          "temp": 11.9,
           "regen_mm": 0.0,
           "regen_prozent": 30
         },
         {
           "zeit": "16:00",
-          "temp": 12.1,
-          "regen_mm": 0.3,
+          "temp": 12.0,
+          "regen_mm": 0.2,
           "regen_prozent": 28
         },
         {
           "zeit": "17:00",
-          "temp": 12.4,
-          "regen_mm": 0.0,
+          "temp": 12.6,
+          "regen_mm": 0.1,
           "regen_prozent": 33
         },
         {
           "zeit": "18:00",
-          "temp": 12.6,
+          "temp": 13.1,
           "regen_mm": 0.0,
           "regen_prozent": 54
         },
         {
           "zeit": "19:00",
-          "temp": 13.1,
+          "temp": 13.2,
           "regen_mm": 0.0,
           "regen_prozent": 83
         },
         {
           "zeit": "20:00",
-          "temp": 13.4,
-          "regen_mm": 0.1,
+          "temp": 13.3,
+          "regen_mm": 0.3,
           "regen_prozent": 98
         },
         {
           "zeit": "21:00",
-          "temp": 13.4,
-          "regen_mm": 0.3,
+          "temp": 13.5,
+          "regen_mm": 0.0,
           "regen_prozent": 88
         },
         {
           "zeit": "22:00",
-          "temp": 13.4,
+          "temp": 13.5,
           "regen_mm": 0.3,
           "regen_prozent": 65
         },
         {
           "zeit": "23:00",
-          "temp": 14.1,
+          "temp": 14.5,
           "regen_mm": 0.0,
           "regen_prozent": 43
         }
@@ -12592,34 +12580,34 @@
       "tage": [
         {
           "datum": "2026-10-13",
-          "max": 14.1,
+          "max": 14.5,
           "min": 10.1,
           "regen_prozent": 98,
-          "regen_mm": 2.1,
-          "wind_kmh": 14.8,
-          "boeen_kmh": 29.2,
+          "regen_mm": 1.8,
+          "wind_kmh": 14.4,
+          "boeen_kmh": 28.4,
           "sonne_std": 0.0,
           "text": "Nieselregen"
         },
         {
           "datum": "2026-10-14",
-          "max": 16.7,
-          "min": 8.2,
+          "max": 16.6,
+          "min": 8.4,
           "regen_prozent": 26,
           "regen_mm": 0.0,
           "wind_kmh": 9.7,
-          "boeen_kmh": 19.8,
+          "boeen_kmh": 22.7,
           "sonne_std": 10.0,
           "text": "bedeckt"
         },
         {
           "datum": "2026-10-15",
-          "max": 18.8,
-          "min": 8.2,
+          "max": 18.7,
+          "min": 8.0,
           "regen_prozent": 0,
           "regen_mm": 0.0,
           "wind_kmh": 11.9,
-          "boeen_kmh": 22.3,
+          "boeen_kmh": 22.0,
           "sonne_std": 10.0,
           "text": "bedeckt"
         }
@@ -12637,7 +12625,7 @@
           "min": 14.4,
           "regen_prozent": 28,
           "regen_mm": 0.0,
-          "wind_kmh": 26.5,
+          "wind_kmh": 26.1,
           "boeen_kmh": 42.5,
           "sonne_std": 10.6,
           "text": "heiter"
@@ -12648,7 +12636,7 @@
           "min": 13.8,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 20.2,
+          "wind_kmh": 19.4,
           "boeen_kmh": 32.0,
           "sonne_std": 10.6,
           "text": "meist sonnig"
@@ -12818,7 +12806,7 @@
           "min": 14.4,
           "regen_prozent": 28,
           "regen_mm": 0.0,
-          "wind_kmh": 26.5,
+          "wind_kmh": 26.1,
           "boeen_kmh": 42.5,
           "sonne_std": 10.6,
           "text": "heiter"
@@ -12829,7 +12817,7 @@
           "min": 13.8,
           "regen_prozent": 0,
           "regen_mm": 0.0,
-          "wind_kmh": 20.2,
+          "wind_kmh": 19.4,
           "boeen_kmh": 32.0,
           "sonne_std": 10.6,
           "text": "meist sonnig"
@@ -12859,7 +12847,7 @@
           "min": 1.8,
           "regen_prozent": 32,
           "regen_mm": 0.5,
-          "wind_kmh": 15.2,
+          "wind_kmh": 15.4,
           "boeen_kmh": 33.8,
           "sonne_std": 8.0,
           "text": "leichter Regen"
@@ -13040,7 +13028,7 @@
           "min": 1.8,
           "regen_prozent": 32,
           "regen_mm": 0.5,
-          "wind_kmh": 15.2,
+          "wind_kmh": 15.4,
           "boeen_kmh": 33.8,
           "sonne_std": 8.0,
           "text": "leichter Regen"
